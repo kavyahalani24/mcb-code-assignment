@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve",
+    "startTime": "2024-03-01T12:18:15.042Z",
+    "endTime": "2024-03-01T12:18:15.243Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "golden-sample-app:serve:development",
+      "target": "serve",
+      "projectName": "golden-sample-app",
+      "hash": "16580940501924877928",
+      "startTime": "2024-03-01T12:18:15.048Z",
+      "endTime": "2024-03-01T12:18:15.242Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
