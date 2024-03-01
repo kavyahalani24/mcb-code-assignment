@@ -89,7 +89,7 @@
     "@nx/eslint-plugin": "16.4.1",
     "@nx/jest": "16.4.1",
     "@nx/js": "16.4.1",
-    "@nx/linter": "16.4.1",
+    "@nx/linter": "16.10.0",
     "@nx/workspace": "16.4.1",
     "@playwright/test": "1.41.2",
     "@schematics/angular": "16.0.4",
