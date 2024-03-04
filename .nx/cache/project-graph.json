@@ -16622,12 +16622,22 @@
       },
       {
         "source": "golden-sample-app",
+        "target": "npm:@backbase/foundation-ang",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
         "target": "npm:@backbase/identity-auth",
         "type": "static"
       },
       {
         "source": "golden-sample-app",
         "target": "npm:@backbase/initiate-payment-journey-ang",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
+        "target": "npm:@backbase/ui-ang",
         "type": "static"
       },
       {
@@ -16658,6 +16668,16 @@
       {
         "source": "golden-sample-app",
         "target": "npm:@backbase/account-statement-business-journey-ang",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
+        "target": "npm:@backbase/internal-account-statement-shared-feature",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
+        "target": "npm:@backbase/internal-account-statement-shared-ui",
         "type": "static"
       },
       {

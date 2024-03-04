@@ -1,0 +1,33 @@
+<ng-container (bbTrackNavigation)="trackNavigation($event)" *ngIf="vm$ | async as vm">
+  <div class="bb-block bb-block--xl">
+    <bb-account-statement-account-picker-container [searchable]="true" [favoriteFirst]="true"
+      [size]="vm.config.accountsPageSize" [multiple]="vm.config.selectMultipleAccounts"
+      [multiSelectLabelLimit]="vm.config.selectedAccountNamesDisplayLimit"
+      [useArrangementManagerClient]="vm.config.useArrangementManagerClient" />
+  </div>
+  <div class="card">
+    <div class="card-body px-0">
+      <form class="pr-5 pl-5" [formGroup]="form" *ngIf="(statements.accountStatements$ | async)?.length">
+        <div class="bb-block bb-block--lg">
+          <bb-search-box-ui formControlName="query" [showClear]="true" [showSearch]="true"
+            placeholder="Search box with autocomplete. Start typing with letter 'J'" (valueChange)="search($event)"
+            [aria-labelledby]="'ariaLabelledby'" [aria-describedby]="'ariaDescribedby'"></bb-search-box-ui>
+        </div>
+      </form>
+      <bb-account-statement-statements-container #statements [pageSize]="vm.config.pageSize" [loadMethod]="'post'"
+        [absoluteDateLimit]="vm.config.absoluteDateLimit" [relativeDateLimit]="vm.config.relativeDateLimit"
+        [sortingDirection]="vm.config.sortingDirection" [sortingOrder]="vm.config.sortingOrder">
+        <bb-account-statement-filters-container filters [showCustomPeriodDropdown]="true"
+          [statementsSelectable]="vm.config.multipleStatementsDownload">
+
+        </bb-account-statement-filters-container>
+        <bb-account-statement-table-container #tableData table
+          [notificationDismissTime]="vm.config.notificationDismissTime"
+          [statementsSelectable]="vm.config.multipleStatementsDownload"
+          [selectionLimit]="vm.config.statementsDownloadSelectionLimit" />
+        <bb-account-statement-pagination-container pagination [loadMoreOnMobileView]="true"
+          [paginationType]="vm.config.paginationType" />
+      </bb-account-statement-statements-container>
+    </div>
+  </div>
+</ng-container>

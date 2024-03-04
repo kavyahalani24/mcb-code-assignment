@@ -18,6 +18,7 @@ import {
 } from '@backbase/initiate-payment-journey-ang';
 import { AvatarModule } from '@backbase/ui-ang/avatar';
 import { ButtonModule } from '@backbase/ui-ang/button';
+import { TableModule } from '@backbase/ui-ang/table';
 import { DropdownMenuModule } from '@backbase/ui-ang/dropdown-menu';
 import { IconModule } from '@backbase/ui-ang/icon';
 import { LayoutModule } from '@backbase/ui-ang/layout';
@@ -55,6 +56,7 @@ import { ServicePathsModule } from './service-paths.module';
     ServicePathsModule,
     DropdownMenuModule,
     IconModule,
+    TableModule,
     LayoutModule,
     LogoModule,
     NgbDropdownModule,

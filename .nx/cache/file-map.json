@@ -115,6 +115,15 @@
     "@backbase-gsa/internal-transactions-feature": [
       "libs/transactions-journey/feature/src/index.ts"
     ],
+    "@backbase-gsa/internal-transactions-feature-transaction-details-view": [
+      "libs/transactions-journey/feature-transaction-details-view/src/index.ts"
+    ],
+    "@backbase-gsa/internal-transactions-feature-transaction-view": [
+      "libs/transactions-journey/feature-transaction-view/src/index.ts"
+    ],
+    "@backbase-gsa/internal-transactions-shared-data": [
+      "libs/transactions-journey/shared-data/src/index.ts"
+    ],
     "@backbase-gsa/internal-transactions-ui": [
       "libs/transactions-journey/ui/src/index.ts"
     ],
@@ -139,21 +148,76 @@
     "@backbase-gsa/transfer-journey": [
       "libs/transfer-journey/shell/src/index.ts"
     ],
-    "@backbase-gsa/internal-transactions-feature-transaction-details-view": [
-      "libs/transactions-journey/feature-transaction-details-view/src/index.ts"
-    ],
-    "@backbase-gsa/internal-transactions-feature-transaction-view": [
-      "libs/transactions-journey/feature-transaction-view/src/index.ts"
-    ],
-    "@backbase-gsa/internal-transactions-shared-data": [
-      "libs/transactions-journey/shared-data/src/index.ts"
-    ],
     "package-json": [
       "package.json"
     ]
   },
   "nxJsonPlugins": [],
   "projectFileMap": {
+    "ach-positive-pay-journey-shared-data": [
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/README.md",
+        "hash": "16928533298450623418"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/jest.config.ts",
+        "hash": "16717556092235182466"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/ng-package.json",
+        "hash": "1832488762987566747"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/package.json",
+        "hash": "7077778515919299415"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/project.json",
+        "hash": "14315518300482369986"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/src/index.ts",
+        "hash": "1221526746183175292"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/src/lib/constants/dynamic-translations.ts",
+        "hash": "16483794133504602658",
+        "deps": [
+          "npm:@angular/localize/init"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/src/lib/constants/permissions.ts",
+        "hash": "12448868164102479989"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shared-data/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
     "transactions-journey-shell": [
       {
         "file": "libs/transactions-journey/shell/.eslintrc.json",
@@ -229,6 +293,79 @@
       },
       {
         "file": "libs/transactions-journey/shell/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "ach-positive-pay-journey-shell": [
+      {
+        "file": "libs/ach-positive-pay-journey/shell/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/README.md",
+        "hash": "7574228065916415141"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/jest.config.ts",
+        "hash": "12517625886040996439"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/ng-package.json",
+        "hash": "5126806175801439507"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/package.json",
+        "hash": "10934794117308851982"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/project.json",
+        "hash": "12108986290547248134"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/src/index.ts",
+        "hash": "2531144994029842369"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/src/lib/ach-positive-pay-journey-shell.module.ts",
+        "hash": "15953900024382946134",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@backbase/foundation-ang/entitlements",
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/src/lib/ach-positive-pay-journey.routes.ts",
+        "hash": "17302654277664216443",
+        "deps": [
+          "npm:@angular/router",
+          "ach-positive-pay-journey-feature",
+          "ach-positive-pay-journey-ui",
+          "npm:@backbase/foundation-ang/entitlements",
+          "ach-positive-pay-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/shell/tsconfig.spec.json",
         "hash": "916342715649326327"
       }
     ],
@@ -330,178 +467,6 @@
         "hash": "916342715649326327"
       }
     ],
-    "transactions-journey-feature-transaction-details-view": [
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/.eslintrc.json",
-        "hash": "3119422092293608666"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/README.md",
-        "hash": "7393099673297295972"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/jest.config.ts",
-        "hash": "1173611729315341265"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/ng-package.json",
-        "hash": "15412287883710880177"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/package.json",
-        "hash": "10327134358234891680"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/project.json",
-        "hash": "1723175689888700465"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/src/index.ts",
-        "hash": "5389899061628585759"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/src/lib/transactions-journey-feature-transaction-details-view.component.html",
-        "hash": "10651419090319244344"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/src/lib/transactions-journey-feature-transaction-details-view.component.scss",
-        "hash": "3511848490860148507"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/src/lib/transactions-journey-feature-transaction-details-view.component.ts",
-        "hash": "4306077847523006152",
-        "deps": [
-          "npm:@angular/common/http",
-          "npm:@angular/core",
-          "npm:@angular/router",
-          "npm:@backbase/transactions-http-ang",
-          "npm:@backbase/foundation-ang/observability",
-          "npm:rxjs",
-          "transactions-journey-data-access",
-          "transactions-journey-shared-data",
-          "npm:@backbase/ui-ang/button",
-          "npm:@backbase/ui-ang/amount",
-          "npm:@backbase/ui-ang/icon",
-          "npm:@angular/common"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/src/test-setup.ts",
-        "hash": "12935735732682149507",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/tsconfig.json",
-        "hash": "8526453262384300416"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/tsconfig.lib.json",
-        "hash": "6020606002228403423"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-details-view/tsconfig.spec.json",
-        "hash": "7159729809249402441"
-      }
-    ],
-    "transfer-journey-shell": [
-      {
-        "file": "libs/transfer-journey/shell/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/transfer-journey/shell/README.md",
-        "hash": "13958107466982336972"
-      },
-      {
-        "file": "libs/transfer-journey/shell/jest.config.ts",
-        "hash": "6755535843930480495"
-      },
-      {
-        "file": "libs/transfer-journey/shell/ng-package.json",
-        "hash": "9854088351551235384"
-      },
-      {
-        "file": "libs/transfer-journey/shell/package.json",
-        "hash": "5926711138832400322"
-      },
-      {
-        "file": "libs/transfer-journey/shell/project.json",
-        "hash": "9359635101250367366"
-      },
-      {
-        "file": "libs/transfer-journey/shell/src/index.ts",
-        "hash": "3335206292442477687",
-        "deps": [
-          "transfer-journey-data-access",
-          "transfer-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/shell/src/lib/make-transfer-journey-store-guard.ts",
-        "hash": "17975846258277987215",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/router"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/shell/src/lib/transfer-journey-shell.module.ts",
-        "hash": "9586128360350946827",
-        "deps": [
-          "npm:@angular/common",
-          "npm:@angular/core",
-          "npm:@angular/router",
-          "transfer-journey-ui",
-          "transfer-journey-feature",
-          "transfer-journey-data-access",
-          "transfer-journey-shared-data",
-          "npm:@backbase/foundation-ang/observability",
-          "npm:@backbase/ui-ang/alert"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/shell/src/lib/transfer-journey.component.html",
-        "hash": "10098402318978424714"
-      },
-      {
-        "file": "libs/transfer-journey/shell/src/lib/transfer-journey.component.ts",
-        "hash": "958578063228805925",
-        "deps": [
-          "npm:@angular/core",
-          "transfer-journey-data-access",
-          "npm:@angular/router"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/shell/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/shell/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/transfer-journey/shell/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/transfer-journey/shell/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transfer-journey/shell/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
     "ach-positive-pay-journey-data-access": [
       {
         "file": "libs/ach-positive-pay-journey/data-access/.eslintrc.json",
@@ -583,1169 +548,83 @@
         "hash": "916342715649326327"
       }
     ],
-    "transfer-journey-feature": [
+    "transactions-journey-feature-transaction-details-view": [
       {
-        "file": "libs/transfer-journey/feature/.eslintrc.json",
-        "hash": "13637937473527605857"
+        "file": "libs/transactions-journey/feature-transaction-details-view/.eslintrc.json",
+        "hash": "3119422092293608666"
       },
       {
-        "file": "libs/transfer-journey/feature/README.md",
-        "hash": "5524788297959607234"
+        "file": "libs/transactions-journey/feature-transaction-details-view/README.md",
+        "hash": "7393099673297295972"
       },
       {
-        "file": "libs/transfer-journey/feature/jest.config.ts",
-        "hash": "18198788049526150587"
+        "file": "libs/transactions-journey/feature-transaction-details-view/jest.config.ts",
+        "hash": "1173611729315341265"
       },
       {
-        "file": "libs/transfer-journey/feature/ng-package.json",
-        "hash": "11190451475019227602"
+        "file": "libs/transactions-journey/feature-transaction-details-view/ng-package.json",
+        "hash": "15412287883710880177"
       },
       {
-        "file": "libs/transfer-journey/feature/package.json",
-        "hash": "718861868840257922"
+        "file": "libs/transactions-journey/feature-transaction-details-view/package.json",
+        "hash": "10327134358234891680"
       },
       {
-        "file": "libs/transfer-journey/feature/project.json",
-        "hash": "5372645246280431933"
+        "file": "libs/transactions-journey/feature-transaction-details-view/project.json",
+        "hash": "1723175689888700465"
       },
       {
-        "file": "libs/transfer-journey/feature/src/index.ts",
-        "hash": "7647107984490169023"
+        "file": "libs/transactions-journey/feature-transaction-details-view/src/index.ts",
+        "hash": "5389899061628585759"
       },
       {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-success-view/make-transfer-success-view.component.html",
-        "hash": "15370091324219388604"
+        "file": "libs/transactions-journey/feature-transaction-details-view/src/lib/transactions-journey-feature-transaction-details-view.component.html",
+        "hash": "10651419090319244344"
       },
       {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-success-view/make-transfer-success-view.component.spec.ts",
-        "hash": "15147498910590937822",
-        "deps": [
-          "npm:@angular/router",
-          "npm:rxjs",
-          "transfer-journey-data-access"
-        ]
+        "file": "libs/transactions-journey/feature-transaction-details-view/src/lib/transactions-journey-feature-transaction-details-view.component.scss",
+        "hash": "3511848490860148507"
       },
       {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-success-view/make-transfer-success-view.component.ts",
-        "hash": "12014816198085527081",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/common",
-          "npm:@angular/router",
-          "transfer-journey-data-access",
-          "npm:@backbase/ui-ang/button"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-summary-view/make-transfer-summary-view.component.html",
-        "hash": "84069871243661779"
-      },
-      {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-summary-view/make-transfer-summary-view.component.spec.ts",
-        "hash": "18115750779600769918",
-        "deps": [
-          "npm:@angular/router",
-          "npm:rxjs",
-          "transfer-journey-data-access"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-summary-view/make-transfer-summary-view.component.ts",
-        "hash": "2625471920407415835",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/common",
-          "npm:@angular/router",
-          "npm:rxjs",
-          "transfer-journey-data-access",
-          "transfer-journey-ui"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-view/make-transfer-view.component.html",
-        "hash": "11938048720349934300"
-      },
-      {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-view/make-transfer-view.component.spec.ts",
-        "hash": "4294717825145398199",
-        "deps": [
-          "npm:@angular/router",
-          "npm:rxjs",
-          "transfer-journey-shared-data",
-          "transfer-journey-data-access"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-view/make-transfer-view.component.ts",
-        "hash": "3360388191807036224",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/router",
-          "npm:@backbase/ui-ang/alert",
-          "npm:@backbase/ui-ang/loading-indicator",
-          "npm:@angular/common",
-          "transfer-journey-data-access",
-          "transfer-journey-shared-data",
-          "transfer-journey-ui",
-          "npm:rxjs/operators",
-          "npm:@backbase/foundation-ang/observability",
-          "npm:rxjs"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/feature/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/feature/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/transfer-journey/feature/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/transfer-journey/feature/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transfer-journey/feature/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "transfer-journey-data-access": [
-      {
-        "file": "libs/transfer-journey/data-access/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/README.md",
-        "hash": "11276869962228440152"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/jest.config.ts",
-        "hash": "8306785698097464769"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/ng-package.json",
-        "hash": "10531055739500541465"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/package.json",
-        "hash": "9546565267825543579"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/project.json",
-        "hash": "18239960243835241653"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/index.ts",
-        "hash": "15643061610299542980"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-accounts/make-transfer-accounts.http.service.spec.ts",
-        "hash": "4171735542061265659",
-        "deps": [
-          "npm:@angular/common/http/testing",
-          "npm:@angular/core/testing"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-accounts/make-transfer-accounts.http.service.ts",
-        "hash": "6417374464385580069",
-        "deps": [
-          "npm:@backbase/arrangement-manager-http-ang",
-          "npm:@angular/core",
-          "npm:rxjs",
-          "transfer-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-communication/make-transfer-communication.service.ts",
-        "hash": "7882498442294306169",
-        "deps": [
-          "transfer-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-journey-config/make-transfer-journey-config.service.ts",
-        "hash": "15438759053392201099",
-        "deps": [
-          "npm:@angular/core"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-journey-state/make-transfer-journey-state.service.spec.ts",
-        "hash": "7441253895406134618",
-        "deps": [
-          "npm:rxjs",
-          "transfer-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-journey-state/make-transfer-journey-state.service.ts",
-        "hash": "1800367805973633909",
+        "file": "libs/transactions-journey/feature-transaction-details-view/src/lib/transactions-journey-feature-transaction-details-view.component.ts",
+        "hash": "4306077847523006152",
         "deps": [
           "npm:@angular/common/http",
           "npm:@angular/core",
-          "npm:@ngrx/component-store",
-          "npm:rxjs",
-          "transfer-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-permissions/make-transfer-permissions.service.spec.ts",
-        "hash": "10603454834697090450",
-        "deps": [
-          "npm:@backbase/foundation-ang/entitlements"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-permissions/make-transfer-permissions.service.ts",
-        "hash": "4381710469300260052",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@backbase/foundation-ang/entitlements",
-          "npm:rxjs"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-route-title-resolver/make-transfer-route-title-resolver.service.ts",
-        "hash": "140590834730671905",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/router"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/data-access/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transfer-journey/data-access/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "transactions-journey-shared-data": [
-      {
-        "file": "libs/transactions-journey/shared-data/.eslintrc.json",
-        "hash": "10939084498220901925"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/README.md",
-        "hash": "10592067748277196352"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/jest.config.ts",
-        "hash": "10913605706012319687"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/ng-package.json",
-        "hash": "12464285380783246314"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/package.json",
-        "hash": "2777743121862869331"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/project.json",
-        "hash": "4842561025547271380"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/src/index.ts",
-        "hash": "3008786305430920662"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/src/lib/config/constants/dynamic-translations.ts",
-        "hash": "8802914363145066116",
-        "deps": [
-          "npm:@angular/localize/init"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/src/lib/config/constants/icon-map.ts",
-        "hash": "12517547728768355374"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/src/lib/config/model/tracker-events.ts",
-        "hash": "16690980921653944079",
-        "deps": [
-          "npm:@backbase/foundation-ang/observability"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transactions-journey/shared-data/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "ach-positive-pay-journey-ui": [
-      {
-        "file": "libs/ach-positive-pay-journey/ui/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/README.md",
-        "hash": "16528611279614606822"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/jest.config.ts",
-        "hash": "6397717762313544483"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/ng-package.json",
-        "hash": "675181355248423206"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/package.json",
-        "hash": "10161285169707054624"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/project.json",
-        "hash": "3396915273519769699"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/index.ts",
-        "hash": "877340500728850260"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rule-form/ach-positive-pay-rule-form.component.css",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rule-form/ach-positive-pay-rule-form.component.html",
-        "hash": "7898950281277415241"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rule-form/ach-positive-pay-rule-form.component.spec.ts",
-        "hash": "215025904946637853"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rule-form/ach-positive-pay-rule-form.component.ts",
-        "hash": "3609266607814461412",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/forms",
-          "npm:@backbase/ui-ang/account-selector",
-          "npm:@backbase/ui-ang/dropdown-single-select",
-          "npm:@backbase/ui-ang/input-text",
-          "npm:@backbase/arrangement-manager-http-ang",
-          "ach-positive-pay-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rules/ach-positive-pay-rules.component.html",
-        "hash": "8474427073940899844"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rules/ach-positive-pay-rules.component.spec.ts",
-        "hash": "6583799993922247921"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rules/ach-positive-pay-rules.component.ts",
-        "hash": "1773185196977085551",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@backbase/ui-ang/empty-state"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/src/test-setup.ts",
-        "hash": "16997592685192381233",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest",
-          "npm:util"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/ui/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "transactions-journey-util": [
-      {
-        "file": "libs/transactions-journey/util/.eslintrc.json",
-        "hash": "10939084498220901925"
-      },
-      {
-        "file": "libs/transactions-journey/util/README.md",
-        "hash": "12089645734330025129"
-      },
-      {
-        "file": "libs/transactions-journey/util/jest.config.ts",
-        "hash": "14458537780637473203"
-      },
-      {
-        "file": "libs/transactions-journey/util/ng-package.json",
-        "hash": "14542343936839872180"
-      },
-      {
-        "file": "libs/transactions-journey/util/package.json",
-        "hash": "9931575508262698563"
-      },
-      {
-        "file": "libs/transactions-journey/util/project.json",
-        "hash": "6571776451886541565"
-      },
-      {
-        "file": "libs/transactions-journey/util/src/index.ts",
-        "hash": "8840874620985469647"
-      },
-      {
-        "file": "libs/transactions-journey/util/src/lib/mocks/transactions-mocks.ts",
-        "hash": "14976770392434082776",
-        "deps": [
-          "npm:@backbase/transactions-http-ang"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/util/src/lib/pipes/filter-transactions.pipe.spec.ts",
-        "hash": "11717848951536523097"
-      },
-      {
-        "file": "libs/transactions-journey/util/src/lib/pipes/filter-transactions.pipe.ts",
-        "hash": "2248097563166046045",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@backbase/transactions-http-ang"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/util/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/util/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/transactions-journey/util/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/transactions-journey/util/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transactions-journey/util/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "transactions-journey-feature-transaction-view": [
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/README.md",
-        "hash": "18403024183802271783"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/jest.config.ts",
-        "hash": "7252651893501387735"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/ng-package.json",
-        "hash": "12803048091439116758"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/package.json",
-        "hash": "15190093112164934682"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/project.json",
-        "hash": "14232099027886790729"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/index.ts",
-        "hash": "11691163724791110341"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transaction-item/transaction-item.component.html",
-        "hash": "14776404184532901373"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transaction-item/transaction-item.component.scss",
-        "hash": "6991461049847023206"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transaction-item/transaction-item.component.spec.ts",
-        "hash": "363968667604554135",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/core/testing",
-          "transactions-journey-util",
-          "transactions-journey-data-access"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transaction-item/transaction-item.component.ts",
-        "hash": "5320498910846892625",
-        "deps": [
-          "npm:@angular/core",
+          "npm:@angular/router",
           "npm:@backbase/transactions-http-ang",
-          "npm:@backbase/ui-ang/view-extensions",
+          "npm:@backbase/foundation-ang/observability",
+          "npm:rxjs",
+          "transactions-journey-data-access",
+          "transactions-journey-shared-data",
+          "npm:@backbase/ui-ang/button",
           "npm:@backbase/ui-ang/amount",
-          "npm:@angular/common",
-          "transactions-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.component.html",
-        "hash": "15758713398026687061"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.component.scss",
-        "hash": "8529324387426796675"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.component.spec.ts",
-        "hash": "14162433153097601966",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/core/testing",
-          "npm:@angular/router",
-          "npm:@backbase/transactions-http-ang",
-          "npm:rxjs",
-          "transactions-journey-data-access",
-          "transactions-journey-util",
-          "npm:@angular/platform-browser",
-          "npm:@backbase/arrangement-manager-http-ang"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.component.ts",
-        "hash": "7861414678250892815",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/router",
-          "npm:rxjs",
-          "npm:rxjs/operators",
-          "npm:@backbase/foundation-ang/observability",
-          "transactions-journey-data-access",
-          "transactions-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.module.ts",
-        "hash": "15758778997812763200",
-        "deps": [
-          "npm:@angular/common",
-          "npm:@angular/core",
-          "npm:@angular/router",
-          "npm:@backbase/ui-ang/badge",
-          "npm:@backbase/foundation-ang/observability",
-          "npm:@backbase/ui-ang/loading-indicator",
-          "transactions-journey-data-access",
-          "transactions-journey-ui",
-          "transactions-journey-util",
-          "npm:@backbase/ui-ang/amount"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/extensions/config.ts",
-        "hash": "4113616526386653395",
-        "deps": [
-          "npm:@angular/core"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/extensions/index.ts",
-        "hash": "477314545041647249"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/lib/extensions/transaction-addition-details.ts",
-        "hash": "13130587404440028581",
-        "deps": [
-          "npm:@backbase/transactions-http-ang",
-          "npm:@backbase/ui-ang/view-extensions"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/src/test-setup.ts",
-        "hash": "7335041592296787173",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest",
-          "npm:@angular/localize/init"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transactions-journey/feature-transaction-view/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "ach-positive-pay-journey-shell": [
-      {
-        "file": "libs/ach-positive-pay-journey/shell/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/README.md",
-        "hash": "7574228065916415141"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/jest.config.ts",
-        "hash": "12517625886040996439"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/ng-package.json",
-        "hash": "5126806175801439507"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/package.json",
-        "hash": "10934794117308851982"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/project.json",
-        "hash": "12108986290547248134"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/src/index.ts",
-        "hash": "2531144994029842369"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/src/lib/ach-positive-pay-journey-shell.module.ts",
-        "hash": "15953900024382946134",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@backbase/foundation-ang/entitlements",
-          "npm:@angular/router"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/src/lib/ach-positive-pay-journey.routes.ts",
-        "hash": "17302654277664216443",
-        "deps": [
-          "npm:@angular/router",
-          "ach-positive-pay-journey-feature",
-          "ach-positive-pay-journey-ui",
-          "npm:@backbase/foundation-ang/entitlements",
-          "ach-positive-pay-journey-shared-data"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shell/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "ach-positive-pay-journey-shared-data": [
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/README.md",
-        "hash": "16928533298450623418"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/jest.config.ts",
-        "hash": "16717556092235182466"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/ng-package.json",
-        "hash": "1832488762987566747"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/package.json",
-        "hash": "7077778515919299415"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/project.json",
-        "hash": "14315518300482369986"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/src/index.ts",
-        "hash": "1221526746183175292"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/src/lib/constants/dynamic-translations.ts",
-        "hash": "16483794133504602658",
-        "deps": [
-          "npm:@angular/localize/init"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/src/lib/constants/permissions.ts",
-        "hash": "12448868164102479989"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/shared-data/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "ach-positive-pay-journey-feature": [
-      {
-        "file": "libs/ach-positive-pay-journey/feature/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/README.md",
-        "hash": "11207749758225651480"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/jest.config.ts",
-        "hash": "9941985286441020770"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/ng-package.json",
-        "hash": "5139749863056959711"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/package.json",
-        "hash": "3099406947028330339"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/project.json",
-        "hash": "4740781874321575640"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/src/index.ts",
-        "hash": "15331339644281510154"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-journey/ach-positive-pay-journey.component.html",
-        "hash": "17140860601537086130"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-journey/ach-positive-pay-journey.component.spec.ts",
-        "hash": "6443158071950673080",
-        "deps": [
-          "npm:@angular/router"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-journey/ach-positive-pay-journey.component.ts",
-        "hash": "17165173314092154662",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/router",
-          "ach-positive-pay-journey-shared-data",
-          "npm:@backbase/ui-ang/heading"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-new-rule/ach-positive-pay-new-rule.component.html",
-        "hash": "6437871615795999075"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-new-rule/ach-positive-pay-new-rule.component.spec.ts",
-        "hash": "7318474038896010827",
-        "deps": [
-          "npm:@angular/forms",
-          "npm:@angular/router",
-          "npm:@backbase/ui-ang/notification",
-          "npm:rxjs",
-          "ach-positive-pay-journey-data-access",
-          "npm:@backbase/arrangement-manager-http-ang"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-new-rule/ach-positive-pay-new-rule.component.ts",
-        "hash": "3691270390243221277",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@ng-bootstrap/ng-bootstrap",
-          "npm:@angular/router",
-          "npm:@angular/forms",
-          "ach-positive-pay-journey-data-access",
-          "npm:@backbase/ui-ang/notification",
-          "ach-positive-pay-journey-shared-data",
-          "npm:@backbase/arrangement-manager-http-ang",
-          "npm:rxjs",
-          "npm:@backbase/ui-ang/modal",
-          "npm:@backbase/ui-ang/header",
-          "npm:@backbase/ui-ang/alert",
-          "ach-positive-pay-journey-ui",
-          "npm:@backbase/ui-ang/load-button",
+          "npm:@backbase/ui-ang/icon",
           "npm:@angular/common"
         ]
       },
       {
-        "file": "libs/ach-positive-pay-journey/feature/src/test-setup.ts",
-        "hash": "16997592685192381233",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest",
-          "npm:util"
-        ]
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/ach-positive-pay-journey/feature/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "transactions-journey-data-access": [
-      {
-        "file": "libs/transactions-journey/data-access/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/transactions-journey/data-access/README.md",
-        "hash": "5709373030792081049"
-      },
-      {
-        "file": "libs/transactions-journey/data-access/jest.config.ts",
-        "hash": "10077716672192509282"
-      },
-      {
-        "file": "libs/transactions-journey/data-access/ng-package.json",
-        "hash": "13736949511120531919"
-      },
-      {
-        "file": "libs/transactions-journey/data-access/package.json",
-        "hash": "18305971411862225411"
-      },
-      {
-        "file": "libs/transactions-journey/data-access/project.json",
-        "hash": "8755014394007089350"
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/index.ts",
-        "hash": "6522760475092183909"
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/lib/services/arrangements/arrangements.service.spec.ts",
-        "hash": "7540476055771866619",
-        "deps": [
-          "npm:@backbase/arrangement-manager-http-ang",
-          "npm:rxjs"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/lib/services/arrangements/arrangements.service.ts",
-        "hash": "13655076709884051879",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@backbase/arrangement-manager-http-ang",
-          "npm:rxjs/operators"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-http/transactions.http.service.spec.ts",
-        "hash": "4235922919451277288",
-        "deps": [
-          "npm:@backbase/transactions-http-ang",
-          "npm:rxjs"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-http/transactions.http.service.ts",
-        "hash": "9063201142297000953",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@backbase/transactions-http-ang",
-          "npm:rxjs",
-          "npm:rxjs/operators"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-journey-communication/transactions-journey-communication.service.ts",
-        "hash": "6402986685196852534",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@backbase/transactions-http-ang",
-          "npm:rxjs"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-journey-config/transactions-journey-config.service.ts",
-        "hash": "17676516185716563421",
-        "deps": [
-          "npm:@angular/core"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-route-title-resolver/transactions-route-title-resolver.service.spec.ts",
-        "hash": "16635010520063819989"
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-route-title-resolver/transactions-route-title-resolver.service.ts",
-        "hash": "6377933418917966277",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/router"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/data-access/src/test-setup.ts",
-        "hash": "17711435995618823417",
+        "file": "libs/transactions-journey/feature-transaction-details-view/src/test-setup.ts",
+        "hash": "12935735732682149507",
         "deps": [
           "npm:jest-preset-angular/setup-jest"
         ]
       },
       {
-        "file": "libs/transactions-journey/data-access/tsconfig.json",
-        "hash": "8667364780278604689"
+        "file": "libs/transactions-journey/feature-transaction-details-view/tsconfig.json",
+        "hash": "8526453262384300416"
       },
       {
-        "file": "libs/transactions-journey/data-access/tsconfig.lib.json",
-        "hash": "13153342938613709718"
+        "file": "libs/transactions-journey/feature-transaction-details-view/tsconfig.lib.json",
+        "hash": "6020606002228403423"
       },
       {
-        "file": "libs/transactions-journey/data-access/tsconfig.lib.prod.json",
+        "file": "libs/transactions-journey/feature-transaction-details-view/tsconfig.lib.prod.json",
         "hash": "7595784142384980674"
       },
       {
-        "file": "libs/transactions-journey/data-access/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "transfer-journey-shared-data": [
-      {
-        "file": "libs/transfer-journey/shared-data/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/README.md",
-        "hash": "6052906832214098391"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/jest.config.ts",
-        "hash": "3206031394127865085"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/ng-package.json",
-        "hash": "894855101988673568"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/package.json",
-        "hash": "9619125703550834844"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/project.json",
-        "hash": "15557201355744334127"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/src/index.ts",
-        "hash": "15030055602934017409"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/src/lib/config/constants/dynamic-translations.ts",
-        "hash": "15940544752775752613",
-        "deps": [
-          "npm:@angular/localize/init"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/src/lib/config/model/Account.ts",
-        "hash": "319129218505295956"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/src/lib/config/model/tracker-events.ts",
-        "hash": "680088572162728714",
-        "deps": [
-          "npm:@backbase/foundation-ang/observability"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transfer-journey/shared-data/tsconfig.spec.json",
-        "hash": "916342715649326327"
-      }
-    ],
-    "transactions-journey-ui": [
-      {
-        "file": "libs/transactions-journey/ui/.eslintrc.json",
-        "hash": "13637937473527605857"
-      },
-      {
-        "file": "libs/transactions-journey/ui/README.md",
-        "hash": "2316866288648789388"
-      },
-      {
-        "file": "libs/transactions-journey/ui/jest.config.ts",
-        "hash": "18342600344498083110"
-      },
-      {
-        "file": "libs/transactions-journey/ui/ng-package.json",
-        "hash": "17447596905288525366"
-      },
-      {
-        "file": "libs/transactions-journey/ui/package.json",
-        "hash": "16696440219796729189"
-      },
-      {
-        "file": "libs/transactions-journey/ui/project.json",
-        "hash": "18360929880050487114"
-      },
-      {
-        "file": "libs/transactions-journey/ui/src/index.ts",
-        "hash": "2259514454488974621"
-      },
-      {
-        "file": "libs/transactions-journey/ui/src/lib/components/text-filter/text-filter.component.html",
-        "hash": "11382715591439149010"
-      },
-      {
-        "file": "libs/transactions-journey/ui/src/lib/components/text-filter/text-filter.component.scss",
-        "hash": "16244654379499282385"
-      },
-      {
-        "file": "libs/transactions-journey/ui/src/lib/components/text-filter/text-filter.component.spec.ts",
-        "hash": "9600465323821855411"
-      },
-      {
-        "file": "libs/transactions-journey/ui/src/lib/components/text-filter/text-filter.component.ts",
-        "hash": "13799838484804468281",
-        "deps": [
-          "npm:@angular/common",
-          "npm:@angular/forms",
-          "npm:@angular/core",
-          "npm:@backbase/ui-ang/input-text"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/ui/src/test-setup.ts",
-        "hash": "17711435995618823417",
-        "deps": [
-          "npm:jest-preset-angular/setup-jest"
-        ]
-      },
-      {
-        "file": "libs/transactions-journey/ui/tsconfig.json",
-        "hash": "8667364780278604689"
-      },
-      {
-        "file": "libs/transactions-journey/ui/tsconfig.lib.json",
-        "hash": "13153342938613709718"
-      },
-      {
-        "file": "libs/transactions-journey/ui/tsconfig.lib.prod.json",
-        "hash": "7595784142384980674"
-      },
-      {
-        "file": "libs/transactions-journey/ui/tsconfig.spec.json",
-        "hash": "916342715649326327"
+        "file": "libs/transactions-journey/feature-transaction-details-view/tsconfig.spec.json",
+        "hash": "7159729809249402441"
       }
     ],
     "golden-sample-app": [
@@ -1815,29 +694,22 @@
       },
       {
         "file": "apps/golden-sample-app/src/app/app.module.ts",
-        "hash": "8373915957750915364",
+        "hash": "10780011489996237883",
         "deps": [
-          "npm:@angular/common/http",
+          "npm:@angular/common",
           "npm:@angular/core",
           "npm:@angular/platform-browser",
-          "npm:@angular/platform-browser/animations",
           "npm:@backbase/accesscontrol-v3-http-ang",
           "npm:@backbase/arrangement-manager-http-ang",
-          "npm:@backbase/foundation-ang/entitlements",
+          "npm:@backbase/foundation-ang",
           "npm:@backbase/identity-auth",
           "npm:@backbase/initiate-payment-journey-ang",
-          "npm:@backbase/ui-ang/avatar",
-          "npm:@backbase/ui-ang/button",
-          "npm:@backbase/ui-ang/dropdown-menu",
-          "npm:@backbase/ui-ang/icon",
-          "npm:@backbase/ui-ang/layout",
-          "npm:@backbase/ui-ang/logo",
+          "npm:@backbase/ui-ang",
           "npm:@ng-bootstrap/ng-bootstrap",
           "npm:@ngrx/effects",
           "npm:@ngrx/store",
           "npm:angular-oauth2-oidc",
-          "npm:ngx-cookie-service",
-          "npm:@backbase/foundation-ang/observability"
+          "npm:ngx-cookie-service"
         ]
       },
       {
@@ -2031,6 +903,32 @@
         ]
       },
       {
+        "file": "apps/golden-sample-app/src/app/custom-views/custom-account-statements-view/custom-account-statements-view.component.html",
+        "hash": "17555500660044992284"
+      },
+      {
+        "file": "apps/golden-sample-app/src/app/custom-views/custom-account-statements-view/custom-account-statements-view.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/golden-sample-app/src/app/custom-views/custom-account-statements-view/custom-account-statements-view.component.spec.ts",
+        "hash": "7811044188591620767",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "apps/golden-sample-app/src/app/custom-views/custom-account-statements-view/custom-account-statements-view.component.ts",
+        "hash": "4521537403460216761",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/forms",
+          "npm:@backbase/account-statement-business-journey-ang",
+          "npm:@backbase/internal-account-statement-shared-feature",
+          "npm:rxjs"
+        ]
+      },
+      {
         "file": "apps/golden-sample-app/src/app/error-page/error-page.component.html",
         "hash": "5116354619256383153"
       },
@@ -2065,10 +963,16 @@
       },
       {
         "file": "apps/golden-sample-app/src/app/journeys/account-statement-business-journey-bundle.module.ts",
-        "hash": "10868050271486807164",
+        "hash": "12334476636125531187",
         "deps": [
           "npm:@angular/core",
-          "npm:@backbase/account-statement-business-journey-ang"
+          "npm:@backbase/account-statement-business-journey-ang",
+          "npm:@backbase/internal-account-statement-shared-feature",
+          "npm:@backbase/internal-account-statement-shared-ui",
+          "npm:@angular/common",
+          "npm:@backbase/ui-ang",
+          "npm:@backbase/foundation-ang",
+          "npm:@angular/forms"
         ]
       },
       {
@@ -2417,6 +1321,1127 @@
       {
         "file": "apps/golden-sample-app/tsconfig.spec.json",
         "hash": "8245715940363115622"
+      }
+    ],
+    "transfer-journey-data-access": [
+      {
+        "file": "libs/transfer-journey/data-access/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/README.md",
+        "hash": "11276869962228440152"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/jest.config.ts",
+        "hash": "8306785698097464769"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/ng-package.json",
+        "hash": "10531055739500541465"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/package.json",
+        "hash": "9546565267825543579"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/project.json",
+        "hash": "18239960243835241653"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/index.ts",
+        "hash": "15643061610299542980"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-accounts/make-transfer-accounts.http.service.spec.ts",
+        "hash": "4171735542061265659",
+        "deps": [
+          "npm:@angular/common/http/testing",
+          "npm:@angular/core/testing"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-accounts/make-transfer-accounts.http.service.ts",
+        "hash": "6417374464385580069",
+        "deps": [
+          "npm:@backbase/arrangement-manager-http-ang",
+          "npm:@angular/core",
+          "npm:rxjs",
+          "transfer-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-communication/make-transfer-communication.service.ts",
+        "hash": "7882498442294306169",
+        "deps": [
+          "transfer-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-journey-config/make-transfer-journey-config.service.ts",
+        "hash": "15438759053392201099",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-journey-state/make-transfer-journey-state.service.spec.ts",
+        "hash": "7441253895406134618",
+        "deps": [
+          "npm:rxjs",
+          "transfer-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-journey-state/make-transfer-journey-state.service.ts",
+        "hash": "1800367805973633909",
+        "deps": [
+          "npm:@angular/common/http",
+          "npm:@angular/core",
+          "npm:@ngrx/component-store",
+          "npm:rxjs",
+          "transfer-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-permissions/make-transfer-permissions.service.spec.ts",
+        "hash": "10603454834697090450",
+        "deps": [
+          "npm:@backbase/foundation-ang/entitlements"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-permissions/make-transfer-permissions.service.ts",
+        "hash": "4381710469300260052",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@backbase/foundation-ang/entitlements",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/lib/services/make-transfer-route-title-resolver/make-transfer-route-title-resolver.service.ts",
+        "hash": "140590834730671905",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/data-access/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transfer-journey/data-access/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "transfer-journey-shared-data": [
+      {
+        "file": "libs/transfer-journey/shared-data/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/README.md",
+        "hash": "6052906832214098391"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/jest.config.ts",
+        "hash": "3206031394127865085"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/ng-package.json",
+        "hash": "894855101988673568"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/package.json",
+        "hash": "9619125703550834844"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/project.json",
+        "hash": "15557201355744334127"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/src/index.ts",
+        "hash": "15030055602934017409"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/src/lib/config/constants/dynamic-translations.ts",
+        "hash": "15940544752775752613",
+        "deps": [
+          "npm:@angular/localize/init"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/src/lib/config/model/Account.ts",
+        "hash": "319129218505295956"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/src/lib/config/model/tracker-events.ts",
+        "hash": "680088572162728714",
+        "deps": [
+          "npm:@backbase/foundation-ang/observability"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transfer-journey/shared-data/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "transfer-journey-shell": [
+      {
+        "file": "libs/transfer-journey/shell/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/transfer-journey/shell/README.md",
+        "hash": "13958107466982336972"
+      },
+      {
+        "file": "libs/transfer-journey/shell/jest.config.ts",
+        "hash": "6755535843930480495"
+      },
+      {
+        "file": "libs/transfer-journey/shell/ng-package.json",
+        "hash": "9854088351551235384"
+      },
+      {
+        "file": "libs/transfer-journey/shell/package.json",
+        "hash": "5926711138832400322"
+      },
+      {
+        "file": "libs/transfer-journey/shell/project.json",
+        "hash": "9359635101250367366"
+      },
+      {
+        "file": "libs/transfer-journey/shell/src/index.ts",
+        "hash": "3335206292442477687",
+        "deps": [
+          "transfer-journey-data-access",
+          "transfer-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/shell/src/lib/make-transfer-journey-store-guard.ts",
+        "hash": "17975846258277987215",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/shell/src/lib/transfer-journey-shell.module.ts",
+        "hash": "9586128360350946827",
+        "deps": [
+          "npm:@angular/common",
+          "npm:@angular/core",
+          "npm:@angular/router",
+          "transfer-journey-ui",
+          "transfer-journey-feature",
+          "transfer-journey-data-access",
+          "transfer-journey-shared-data",
+          "npm:@backbase/foundation-ang/observability",
+          "npm:@backbase/ui-ang/alert"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/shell/src/lib/transfer-journey.component.html",
+        "hash": "10098402318978424714"
+      },
+      {
+        "file": "libs/transfer-journey/shell/src/lib/transfer-journey.component.ts",
+        "hash": "958578063228805925",
+        "deps": [
+          "npm:@angular/core",
+          "transfer-journey-data-access",
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/shell/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/shell/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transfer-journey/shell/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transfer-journey/shell/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transfer-journey/shell/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "transactions-journey-data-access": [
+      {
+        "file": "libs/transactions-journey/data-access/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/README.md",
+        "hash": "5709373030792081049"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/jest.config.ts",
+        "hash": "10077716672192509282"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/ng-package.json",
+        "hash": "13736949511120531919"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/package.json",
+        "hash": "18305971411862225411"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/project.json",
+        "hash": "8755014394007089350"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/index.ts",
+        "hash": "6522760475092183909"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/lib/services/arrangements/arrangements.service.spec.ts",
+        "hash": "7540476055771866619",
+        "deps": [
+          "npm:@backbase/arrangement-manager-http-ang",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/lib/services/arrangements/arrangements.service.ts",
+        "hash": "13655076709884051879",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@backbase/arrangement-manager-http-ang",
+          "npm:rxjs/operators"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-http/transactions.http.service.spec.ts",
+        "hash": "4235922919451277288",
+        "deps": [
+          "npm:@backbase/transactions-http-ang",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-http/transactions.http.service.ts",
+        "hash": "9063201142297000953",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@backbase/transactions-http-ang",
+          "npm:rxjs",
+          "npm:rxjs/operators"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-journey-communication/transactions-journey-communication.service.ts",
+        "hash": "6402986685196852534",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@backbase/transactions-http-ang",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-journey-config/transactions-journey-config.service.ts",
+        "hash": "17676516185716563421",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-route-title-resolver/transactions-route-title-resolver.service.spec.ts",
+        "hash": "16635010520063819989"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/lib/services/transactions-route-title-resolver/transactions-route-title-resolver.service.ts",
+        "hash": "6377933418917966277",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/data-access/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/data-access/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transactions-journey/data-access/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "transactions-journey-feature-transaction-view": [
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/README.md",
+        "hash": "18403024183802271783"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/jest.config.ts",
+        "hash": "7252651893501387735"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/ng-package.json",
+        "hash": "12803048091439116758"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/package.json",
+        "hash": "15190093112164934682"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/project.json",
+        "hash": "14232099027886790729"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/index.ts",
+        "hash": "11691163724791110341"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transaction-item/transaction-item.component.html",
+        "hash": "14776404184532901373"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transaction-item/transaction-item.component.scss",
+        "hash": "6991461049847023206"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transaction-item/transaction-item.component.spec.ts",
+        "hash": "363968667604554135",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/core/testing",
+          "transactions-journey-util",
+          "transactions-journey-data-access"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transaction-item/transaction-item.component.ts",
+        "hash": "5320498910846892625",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@backbase/transactions-http-ang",
+          "npm:@backbase/ui-ang/view-extensions",
+          "npm:@backbase/ui-ang/amount",
+          "npm:@angular/common",
+          "transactions-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.component.html",
+        "hash": "15758713398026687061"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.component.scss",
+        "hash": "8529324387426796675"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.component.spec.ts",
+        "hash": "14162433153097601966",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/core/testing",
+          "npm:@angular/router",
+          "npm:@backbase/transactions-http-ang",
+          "npm:rxjs",
+          "transactions-journey-data-access",
+          "transactions-journey-util",
+          "npm:@angular/platform-browser",
+          "npm:@backbase/arrangement-manager-http-ang"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.component.ts",
+        "hash": "7861414678250892815",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router",
+          "npm:rxjs",
+          "npm:rxjs/operators",
+          "npm:@backbase/foundation-ang/observability",
+          "transactions-journey-data-access",
+          "transactions-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/components/transactions-view/transactions-view.module.ts",
+        "hash": "15758778997812763200",
+        "deps": [
+          "npm:@angular/common",
+          "npm:@angular/core",
+          "npm:@angular/router",
+          "npm:@backbase/ui-ang/badge",
+          "npm:@backbase/foundation-ang/observability",
+          "npm:@backbase/ui-ang/loading-indicator",
+          "transactions-journey-data-access",
+          "transactions-journey-ui",
+          "transactions-journey-util",
+          "npm:@backbase/ui-ang/amount"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/extensions/config.ts",
+        "hash": "4113616526386653395",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/extensions/index.ts",
+        "hash": "477314545041647249"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/lib/extensions/transaction-addition-details.ts",
+        "hash": "13130587404440028581",
+        "deps": [
+          "npm:@backbase/transactions-http-ang",
+          "npm:@backbase/ui-ang/view-extensions"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/src/test-setup.ts",
+        "hash": "7335041592296787173",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest",
+          "npm:@angular/localize/init"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transactions-journey/feature-transaction-view/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "transfer-journey-feature": [
+      {
+        "file": "libs/transfer-journey/feature/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/transfer-journey/feature/README.md",
+        "hash": "5524788297959607234"
+      },
+      {
+        "file": "libs/transfer-journey/feature/jest.config.ts",
+        "hash": "18198788049526150587"
+      },
+      {
+        "file": "libs/transfer-journey/feature/ng-package.json",
+        "hash": "11190451475019227602"
+      },
+      {
+        "file": "libs/transfer-journey/feature/package.json",
+        "hash": "718861868840257922"
+      },
+      {
+        "file": "libs/transfer-journey/feature/project.json",
+        "hash": "5372645246280431933"
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/index.ts",
+        "hash": "7647107984490169023"
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-success-view/make-transfer-success-view.component.html",
+        "hash": "15370091324219388604"
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-success-view/make-transfer-success-view.component.spec.ts",
+        "hash": "15147498910590937822",
+        "deps": [
+          "npm:@angular/router",
+          "npm:rxjs",
+          "transfer-journey-data-access"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-success-view/make-transfer-success-view.component.ts",
+        "hash": "12014816198085527081",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@angular/router",
+          "transfer-journey-data-access",
+          "npm:@backbase/ui-ang/button"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-summary-view/make-transfer-summary-view.component.html",
+        "hash": "84069871243661779"
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-summary-view/make-transfer-summary-view.component.spec.ts",
+        "hash": "18115750779600769918",
+        "deps": [
+          "npm:@angular/router",
+          "npm:rxjs",
+          "transfer-journey-data-access"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-summary-view/make-transfer-summary-view.component.ts",
+        "hash": "2625471920407415835",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@angular/router",
+          "npm:rxjs",
+          "transfer-journey-data-access",
+          "transfer-journey-ui"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-view/make-transfer-view.component.html",
+        "hash": "11938048720349934300"
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-view/make-transfer-view.component.spec.ts",
+        "hash": "4294717825145398199",
+        "deps": [
+          "npm:@angular/router",
+          "npm:rxjs",
+          "transfer-journey-shared-data",
+          "transfer-journey-data-access"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/lib/components/make-transfer-view/make-transfer-view.component.ts",
+        "hash": "3360388191807036224",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router",
+          "npm:@backbase/ui-ang/alert",
+          "npm:@backbase/ui-ang/loading-indicator",
+          "npm:@angular/common",
+          "transfer-journey-data-access",
+          "transfer-journey-shared-data",
+          "transfer-journey-ui",
+          "npm:rxjs/operators",
+          "npm:@backbase/foundation-ang/observability",
+          "npm:rxjs"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/feature/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/transfer-journey/feature/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transfer-journey/feature/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transfer-journey/feature/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transfer-journey/feature/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "transactions-journey-util": [
+      {
+        "file": "libs/transactions-journey/util/.eslintrc.json",
+        "hash": "10939084498220901925"
+      },
+      {
+        "file": "libs/transactions-journey/util/README.md",
+        "hash": "12089645734330025129"
+      },
+      {
+        "file": "libs/transactions-journey/util/jest.config.ts",
+        "hash": "14458537780637473203"
+      },
+      {
+        "file": "libs/transactions-journey/util/ng-package.json",
+        "hash": "14542343936839872180"
+      },
+      {
+        "file": "libs/transactions-journey/util/package.json",
+        "hash": "9931575508262698563"
+      },
+      {
+        "file": "libs/transactions-journey/util/project.json",
+        "hash": "6571776451886541565"
+      },
+      {
+        "file": "libs/transactions-journey/util/src/index.ts",
+        "hash": "8840874620985469647"
+      },
+      {
+        "file": "libs/transactions-journey/util/src/lib/mocks/transactions-mocks.ts",
+        "hash": "14976770392434082776",
+        "deps": [
+          "npm:@backbase/transactions-http-ang"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/util/src/lib/pipes/filter-transactions.pipe.spec.ts",
+        "hash": "11717848951536523097"
+      },
+      {
+        "file": "libs/transactions-journey/util/src/lib/pipes/filter-transactions.pipe.ts",
+        "hash": "2248097563166046045",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@backbase/transactions-http-ang"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/util/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/util/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transactions-journey/util/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transactions-journey/util/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transactions-journey/util/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "transactions-journey-ui": [
+      {
+        "file": "libs/transactions-journey/ui/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/transactions-journey/ui/README.md",
+        "hash": "2316866288648789388"
+      },
+      {
+        "file": "libs/transactions-journey/ui/jest.config.ts",
+        "hash": "18342600344498083110"
+      },
+      {
+        "file": "libs/transactions-journey/ui/ng-package.json",
+        "hash": "17447596905288525366"
+      },
+      {
+        "file": "libs/transactions-journey/ui/package.json",
+        "hash": "16696440219796729189"
+      },
+      {
+        "file": "libs/transactions-journey/ui/project.json",
+        "hash": "18360929880050487114"
+      },
+      {
+        "file": "libs/transactions-journey/ui/src/index.ts",
+        "hash": "2259514454488974621"
+      },
+      {
+        "file": "libs/transactions-journey/ui/src/lib/components/text-filter/text-filter.component.html",
+        "hash": "11382715591439149010"
+      },
+      {
+        "file": "libs/transactions-journey/ui/src/lib/components/text-filter/text-filter.component.scss",
+        "hash": "16244654379499282385"
+      },
+      {
+        "file": "libs/transactions-journey/ui/src/lib/components/text-filter/text-filter.component.spec.ts",
+        "hash": "9600465323821855411"
+      },
+      {
+        "file": "libs/transactions-journey/ui/src/lib/components/text-filter/text-filter.component.ts",
+        "hash": "13799838484804468281",
+        "deps": [
+          "npm:@angular/common",
+          "npm:@angular/forms",
+          "npm:@angular/core",
+          "npm:@backbase/ui-ang/input-text"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/ui/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/ui/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transactions-journey/ui/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transactions-journey/ui/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transactions-journey/ui/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "transactions-journey-shared-data": [
+      {
+        "file": "libs/transactions-journey/shared-data/.eslintrc.json",
+        "hash": "10939084498220901925"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/README.md",
+        "hash": "10592067748277196352"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/jest.config.ts",
+        "hash": "10913605706012319687"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/ng-package.json",
+        "hash": "12464285380783246314"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/package.json",
+        "hash": "2777743121862869331"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/project.json",
+        "hash": "4842561025547271380"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/src/index.ts",
+        "hash": "3008786305430920662"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/src/lib/config/constants/dynamic-translations.ts",
+        "hash": "8802914363145066116",
+        "deps": [
+          "npm:@angular/localize/init"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/src/lib/config/constants/icon-map.ts",
+        "hash": "12517547728768355374"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/src/lib/config/model/tracker-events.ts",
+        "hash": "16690980921653944079",
+        "deps": [
+          "npm:@backbase/foundation-ang/observability"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest"
+        ]
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/transactions-journey/shared-data/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "ach-positive-pay-journey-feature": [
+      {
+        "file": "libs/ach-positive-pay-journey/feature/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/README.md",
+        "hash": "11207749758225651480"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/jest.config.ts",
+        "hash": "9941985286441020770"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/ng-package.json",
+        "hash": "5139749863056959711"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/package.json",
+        "hash": "3099406947028330339"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/project.json",
+        "hash": "4740781874321575640"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/src/index.ts",
+        "hash": "15331339644281510154"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-journey/ach-positive-pay-journey.component.html",
+        "hash": "17140860601537086130"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-journey/ach-positive-pay-journey.component.spec.ts",
+        "hash": "6443158071950673080",
+        "deps": [
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-journey/ach-positive-pay-journey.component.ts",
+        "hash": "17165173314092154662",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router",
+          "ach-positive-pay-journey-shared-data",
+          "npm:@backbase/ui-ang/heading"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-new-rule/ach-positive-pay-new-rule.component.html",
+        "hash": "6437871615795999075"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-new-rule/ach-positive-pay-new-rule.component.spec.ts",
+        "hash": "7318474038896010827",
+        "deps": [
+          "npm:@angular/forms",
+          "npm:@angular/router",
+          "npm:@backbase/ui-ang/notification",
+          "npm:rxjs",
+          "ach-positive-pay-journey-data-access",
+          "npm:@backbase/arrangement-manager-http-ang"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/src/lib/components/ach-positive-pay-new-rule/ach-positive-pay-new-rule.component.ts",
+        "hash": "3691270390243221277",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@ng-bootstrap/ng-bootstrap",
+          "npm:@angular/router",
+          "npm:@angular/forms",
+          "ach-positive-pay-journey-data-access",
+          "npm:@backbase/ui-ang/notification",
+          "ach-positive-pay-journey-shared-data",
+          "npm:@backbase/arrangement-manager-http-ang",
+          "npm:rxjs",
+          "npm:@backbase/ui-ang/modal",
+          "npm:@backbase/ui-ang/header",
+          "npm:@backbase/ui-ang/alert",
+          "ach-positive-pay-journey-ui",
+          "npm:@backbase/ui-ang/load-button",
+          "npm:@angular/common"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/src/test-setup.ts",
+        "hash": "16997592685192381233",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest",
+          "npm:util"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/feature/tsconfig.spec.json",
+        "hash": "916342715649326327"
+      }
+    ],
+    "ach-positive-pay-journey-ui": [
+      {
+        "file": "libs/ach-positive-pay-journey/ui/.eslintrc.json",
+        "hash": "13637937473527605857"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/README.md",
+        "hash": "16528611279614606822"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/jest.config.ts",
+        "hash": "6397717762313544483"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/ng-package.json",
+        "hash": "675181355248423206"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/package.json",
+        "hash": "10161285169707054624"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/project.json",
+        "hash": "3396915273519769699"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/index.ts",
+        "hash": "877340500728850260"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rule-form/ach-positive-pay-rule-form.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rule-form/ach-positive-pay-rule-form.component.html",
+        "hash": "7898950281277415241"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rule-form/ach-positive-pay-rule-form.component.spec.ts",
+        "hash": "215025904946637853"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rule-form/ach-positive-pay-rule-form.component.ts",
+        "hash": "3609266607814461412",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/forms",
+          "npm:@backbase/ui-ang/account-selector",
+          "npm:@backbase/ui-ang/dropdown-single-select",
+          "npm:@backbase/ui-ang/input-text",
+          "npm:@backbase/arrangement-manager-http-ang",
+          "ach-positive-pay-journey-shared-data"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rules/ach-positive-pay-rules.component.html",
+        "hash": "8474427073940899844"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rules/ach-positive-pay-rules.component.spec.ts",
+        "hash": "6583799993922247921"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/lib/components/ach-positive-pay-rules/ach-positive-pay-rules.component.ts",
+        "hash": "1773185196977085551",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@backbase/ui-ang/empty-state"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/src/test-setup.ts",
+        "hash": "16997592685192381233",
+        "deps": [
+          "npm:jest-preset-angular/setup-jest",
+          "npm:util"
+        ]
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/tsconfig.json",
+        "hash": "8667364780278604689"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/tsconfig.lib.json",
+        "hash": "13153342938613709718"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/tsconfig.lib.prod.json",
+        "hash": "7595784142384980674"
+      },
+      {
+        "file": "libs/ach-positive-pay-journey/ui/tsconfig.spec.json",
+        "hash": "916342715649326327"
       }
     ]
   }
