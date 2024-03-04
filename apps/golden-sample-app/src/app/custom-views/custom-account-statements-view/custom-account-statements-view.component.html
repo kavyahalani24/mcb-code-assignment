@@ -10,8 +10,8 @@
       <form class="pr-5 pl-5" [formGroup]="form" *ngIf="(statements.accountStatements$ | async)?.length">
         <div class="bb-block bb-block--lg">
           <bb-search-box-ui formControlName="query" [showClear]="true" [showSearch]="true"
-            placeholder="Search box with autocomplete. Start typing with letter 'J'" (valueChange)="search($event)"
-            [aria-labelledby]="'ariaLabelledby'" [aria-describedby]="'ariaDescribedby'"></bb-search-box-ui>
+            placeholder="Search by account number" (valueChange)="search($event)" [aria-labelledby]="'ariaLabelledby'"
+            [aria-describedby]="'ariaDescribedby'"></bb-search-box-ui>
         </div>
       </form>
       <bb-account-statement-statements-container #statements [pageSize]="vm.config.pageSize" [loadMethod]="'post'"
