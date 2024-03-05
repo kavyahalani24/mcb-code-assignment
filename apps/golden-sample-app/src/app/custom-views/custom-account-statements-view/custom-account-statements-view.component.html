@@ -10,7 +10,7 @@
       <form class="pr-5 pl-5" [formGroup]="form" *ngIf="(statements.accountStatements$ | async)?.length">
         <div class="bb-block bb-block--lg">
           <bb-search-box-ui formControlName="query" [showClear]="true" [showSearch]="true"
-            placeholder="Search by account number" (valueChange)="search($event)" [aria-labelledby]="'ariaLabelledby'"
+            placeholder="Search with account number" (valueChange)="search()" [aria-labelledby]="'ariaLabelledby'"
             [aria-describedby]="'ariaDescribedby'"></bb-search-box-ui>
         </div>
       </form>
@@ -21,10 +21,11 @@
           [statementsSelectable]="vm.config.multipleStatementsDownload">
 
         </bb-account-statement-filters-container>
-        <bb-account-statement-table-container #tableData table
+        <!-- custom table component -->
+        <gsa-custom-account-statement-table-container table [searchTerm]="searchTerm"
           [notificationDismissTime]="vm.config.notificationDismissTime"
           [statementsSelectable]="vm.config.multipleStatementsDownload"
-          [selectionLimit]="vm.config.statementsDownloadSelectionLimit" />
+          [selectionLimit]="vm.config.statementsDownloadSelectionLimit"></gsa-custom-account-statement-table-container>
         <bb-account-statement-pagination-container pagination [loadMoreOnMobileView]="true"
           [paginationType]="vm.config.paginationType" />
       </bb-account-statement-statements-container>

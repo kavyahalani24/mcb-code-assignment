@@ -45,6 +45,7 @@ import { TrackerModule } from '@backbase/foundation-ang/observability';
 import { UserContextInterceptor } from './user-context/user-context.interceptor';
 import { ActivityMonitorModule } from './auth/activity-monitor';
 import { ServicePathsModule } from './service-paths.module';
+import { AnalyticsService } from './services/analytics.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -70,18 +71,18 @@ import { ServicePathsModule } from './service-paths.module';
     }),
     ButtonModule,
     IdentityAuthModule,
-    // TrackerModule.forRoot({
-    //   handler: AnalyticsService,
-    //   openTelemetryConfig: {
-    //     appName: packageInfo.name,
-    //     appVersion: packageInfo.version,
-    //     apiKey: environment.bbApiKey,
-    //     env: 'local',
-    //     isProduction: environment.production,
-    //     isEnabled: environment.isTelemetryTracerEnabled,
-    //     url: environment.telemetryCollectorURL,
-    //   },
-    // }),
+    TrackerModule.forRoot({
+      handler: AnalyticsService,
+      // openTelemetryConfig: {
+      //   appName: packageInfo.name,
+      //   appVersion: packageInfo.version,
+      //   apiKey: environment.bbApiKey,
+      //   env: 'local',
+      //   isProduction: environment.production,
+      //   isEnabled: environment.isTelemetryTracerEnabled,
+      //   url: environment.telemetryCollectorURL,
+      // },
+    }),
     ActivityMonitorModule,
   ],
   providers: [

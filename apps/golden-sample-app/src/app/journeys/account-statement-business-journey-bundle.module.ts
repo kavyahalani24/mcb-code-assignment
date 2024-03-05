@@ -17,10 +17,7 @@ import {
   AccountStatementTableContainerComponent,
   AccountStatementPaginationContainerComponent,
 } from '@backbase/internal-account-statement-shared-feature';
-import {
-  ACCOUNT_STATEMENT_TABLE_CONFIG_TOKEN,
-  AccountStatementBaseFiltersComponent,
-} from '@backbase/internal-account-statement-shared-ui';
+import { AccountStatementBaseTableModule } from '@backbase/internal-account-statement-shared-ui';
 import {
   APP_ACCOUNT_STATEMENT_BASE_PATH,
   APP_ARRANGEMENT_MANAGER_BASE_PATH,
@@ -32,6 +29,7 @@ import { CustomAccountStatementsViewComponent } from '../custom-views/custom-acc
 import { TrackerModule } from '@backbase/foundation-ang/observability';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchBoxModule } from '@backbase/ui-ang/search-box';
+import { CustomAccountStatementTableContainerComponent } from '../custom-views/custom-account-statement-table-container/custom-account-statement-table-container.component';
 
 @NgModule({
   imports: [
@@ -72,7 +70,7 @@ import { SearchBoxModule } from '@backbase/ui-ang/search-box';
     AccountStatementFiltersContainerComponent,
     AccountStatementTableContainerComponent,
     AccountStatementPaginationContainerComponent,
-    AccountStatementBaseFiltersComponent,
+    AccountStatementBaseTableModule,
   ],
   providers: [
     {
@@ -97,6 +95,9 @@ import { SearchBoxModule } from '@backbase/ui-ang/search-box';
       useExisting: APP_ARRANGEMENT_MANAGER_BASE_PATH,
     },
   ],
-  declarations: [CustomAccountStatementsViewComponent],
+  declarations: [
+    CustomAccountStatementsViewComponent,
+    CustomAccountStatementTableContainerComponent,
+  ],
 })
 export class AccountStatementBusinessJourneyBundleModule {}

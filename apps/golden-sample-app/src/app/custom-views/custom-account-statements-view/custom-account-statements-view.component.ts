@@ -1,11 +1,9 @@
-import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import {
   AccountStatementBusinessJourneyConfigurationService,
   AccountStatementBusinessViewComponent,
 } from '@backbase/account-statement-business-journey-ang';
-import { AccountStatementStatementsContainerComponent } from '@backbase/internal-account-statement-shared-feature';
-import { Observable, map, switchMap } from 'rxjs';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -15,8 +13,9 @@ import { Observable, map, switchMap } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CustomAccountStatementsViewComponent extends AccountStatementBusinessViewComponent {
-  @ViewChild('statements', { static: true })
-  statementsComponent!: AccountStatementStatementsContainerComponent;
+  // vars
+  searchTerm = '';
+
   constructor(
     configService: AccountStatementBusinessJourneyConfigurationService
   ) {
@@ -27,27 +26,7 @@ export class CustomAccountStatementsViewComponent extends AccountStatementBusine
     query: new UntypedFormControl(''),
   });
 
-  startSearching(value: any) {
-    alert(`You are searching for ${value}`);
-  }
-
-  search(text: Observable<string>): Observable<Array<string>> {
-    return text.pipe(
-      switchMap((term) =>
-        this.statementsComponent.accountStatements$.pipe(
-          map((items) =>
-            items.filter(
-              (item) =>
-                item.accountNumber
-                  ?.toLowerCase()
-                  .indexOf(term.toLowerCase()) === 0
-            )
-          )
-        )
-      ),
-      map((filteredItems) =>
-        filteredItems.map((item) => item.accountNumber || '')
-      )
-    );
+  search() {
+    this.searchTerm = this.form.controls['query'].value;
   }
 }

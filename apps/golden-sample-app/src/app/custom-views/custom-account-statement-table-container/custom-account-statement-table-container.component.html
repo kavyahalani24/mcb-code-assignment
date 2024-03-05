@@ -1,0 +1,13 @@
+<div class="bb-block">
+  <div class="px-4 py-2">
+    <bb-account-statement-base-table [tableConfig]="tableConfig" [dateFormat]="dateFormat"
+      [sortingParams]="(sortingParams$ | async)!" [accountStatements]="filteredAccountStatements!" [loading]="
+        (accountStatementsLoading$ | async) === loadingStates.LOADING_TABLE
+      " (sortEvent)="onSort($event)" [statementsSelectable]="statementsSelectable"
+      [allSelected]="(allSelected$ | async) === true"
+      [allSelectedIndeterminate]="(allSelectedIndeterminate$ | async) === true"
+      [allowSelecting]="(isLimitReached$ | async) === false"
+      [displayDownloadPreviewHeaders]="displayDownloadPreviewHeaders" (selectItem)="onStatementSelect($event)"
+      (selectAll)="onAllStatementsSelect($event)" (download)="onDownload($event)" (preview)="onPreview($event)" />
+  </div>
+</div>

@@ -4178,9 +4178,9 @@
       "type": "npm",
       "name": "npm:@jridgewell/trace-mapping",
       "data": {
-        "version": "0.3.24",
+        "version": "0.3.25",
         "packageName": "@jridgewell/trace-mapping",
-        "hash": "sha512-+VaWXDa6+l6MhflBvVXjIEAzb59nQ2JUK3bwRp2zRpPtU+8TFRy9Gg/5oIcNlkEL5PGlBFGfemUVvIgLnTzq7Q=="
+        "hash": "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ=="
       }
     },
     "npm:@csstools/cascade-layer-name-parser": {
@@ -8435,9 +8435,9 @@
       "type": "npm",
       "name": "npm:caniuse-lite",
       "data": {
-        "version": "1.0.30001591",
+        "version": "1.0.30001593",
         "packageName": "caniuse-lite",
-        "hash": "sha512-PCzRMei/vXjJyL5mJtzNiUCKP59dm8Apqc3PH8gJkMnMXZGox93RbE76jHsmLwmIo6/3nsYIpJtx0O7u5PqFuQ=="
+        "hash": "sha512-UWM1zlo3cZfkpBysd7AS+z+v007q9G1+fLTUU42rQnY6t2axoogPW/xol6T7juU5EUoOhML4WgBIdG+9yYqAjQ=="
       }
     },
     "npm:caseless": {
@@ -9749,9 +9749,9 @@
       "type": "npm",
       "name": "npm:electron-to-chromium",
       "data": {
-        "version": "1.4.689",
+        "version": "1.4.690",
         "packageName": "electron-to-chromium",
-        "hash": "sha512-GatzRKnGPS1go29ep25reM94xxd1Wj8ritU0yRhCJ/tr1Bg8gKnm6R9O/yPOhGQBoLMZ9ezfrpghNaTw97C/PQ=="
+        "hash": "sha512-+2OAGjUx68xElQhydpcbqH50hE8Vs2K6TkAeLhICYfndb67CVH0UsZaijmRUE3rHlIxU1u0jxwhgVe6fK3YANA=="
       }
     },
     "npm:emittery": {
@@ -11063,9 +11063,9 @@
       "type": "npm",
       "name": "npm:html-entities",
       "data": {
-        "version": "2.4.0",
+        "version": "2.5.2",
         "packageName": "html-entities",
-        "hash": "sha512-igBTJcNNNhvZFRtm8uA6xMY6xYleeDwn3PeBCkDz7tHttv4F2hsDI2aPgNERWzvRcNYHNT3ymRaQzllmXj4YsQ=="
+        "hash": "sha512-K//PSRMQk4FZ78Kyau+mZurHn3FH0Vwr+H36eE0rPbeYkRRi9YxceYPhuN60UwWorxyKHhqoAJl2OFKa4BVtaA=="
       }
     },
     "npm:html-escaper": {
@@ -16131,6 +16131,16 @@
     "transactions-journey-feature-transaction-details-view": [
       {
         "source": "transactions-journey-feature-transaction-details-view",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-feature-transaction-details-view",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-feature-transaction-details-view",
         "target": "npm:@angular/core",
         "type": "static"
       },
@@ -16142,6 +16152,11 @@
       {
         "source": "transactions-journey-feature-transaction-details-view",
         "target": "npm:@backbase/transactions-http-ang",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-feature-transaction-details-view",
+        "target": "npm:@backbase/foundation-ang",
         "type": "static"
       },
       {
@@ -16161,11 +16176,26 @@
       },
       {
         "source": "transactions-journey-feature-transaction-details-view",
-        "target": "npm:@angular/common",
+        "target": "npm:@backbase/ui-ang",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-feature-transaction-details-view",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
     "transactions-journey-feature-transaction-view": [
+      {
+        "source": "transactions-journey-feature-transaction-view",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-feature-transaction-view",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
       {
         "source": "transactions-journey-feature-transaction-view",
         "target": "npm:@angular/core",
@@ -16188,7 +16218,7 @@
       },
       {
         "source": "transactions-journey-feature-transaction-view",
-        "target": "npm:@angular/common",
+        "target": "npm:@backbase/ui-ang",
         "type": "static"
       },
       {
@@ -16218,11 +16248,41 @@
       },
       {
         "source": "transactions-journey-feature-transaction-view",
+        "target": "npm:@backbase/foundation-ang",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-feature-transaction-view",
         "target": "transactions-journey-ui",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-feature-transaction-view",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-feature-transaction-view",
+        "target": "npm:@angular/localize",
         "type": "static"
       }
     ],
     "ach-positive-pay-journey-data-access": [
+      {
+        "source": "ach-positive-pay-journey-data-access",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-data-access",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-data-access",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
       {
         "source": "ach-positive-pay-journey-data-access",
         "target": "npm:@backbase/arrangement-manager-http-ang",
@@ -16230,17 +16290,58 @@
       },
       {
         "source": "ach-positive-pay-journey-data-access",
-        "target": "npm:@angular/core",
+        "target": "npm:rxjs",
         "type": "static"
       },
       {
         "source": "ach-positive-pay-journey-data-access",
-        "target": "npm:rxjs",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
-    "ach-positive-pay-journey-shared-data": [],
+    "ach-positive-pay-journey-shared-data": [
+      {
+        "source": "ach-positive-pay-journey-shared-data",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-shared-data",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-shared-data",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-shared-data",
+        "target": "npm:@angular/localize",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-shared-data",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "ach-positive-pay-journey-feature": [
+      {
+        "source": "ach-positive-pay-journey-feature",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-feature",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-feature",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
       {
         "source": "ach-positive-pay-journey-feature",
         "target": "npm:@angular/router",
@@ -16248,12 +16349,12 @@
       },
       {
         "source": "ach-positive-pay-journey-feature",
-        "target": "npm:@angular/core",
+        "target": "ach-positive-pay-journey-shared-data",
         "type": "static"
       },
       {
         "source": "ach-positive-pay-journey-feature",
-        "target": "ach-positive-pay-journey-shared-data",
+        "target": "npm:@backbase/ui-ang",
         "type": "static"
       },
       {
@@ -16288,11 +16389,26 @@
       },
       {
         "source": "ach-positive-pay-journey-feature",
-        "target": "npm:@angular/common",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
     "transactions-journey-data-access": [
+      {
+        "source": "transactions-journey-data-access",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-data-access",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-data-access",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
       {
         "source": "transactions-journey-data-access",
         "target": "npm:@backbase/arrangement-manager-http-ang",
@@ -16305,11 +16421,6 @@
       },
       {
         "source": "transactions-journey-data-access",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "transactions-journey-data-access",
         "target": "npm:@backbase/transactions-http-ang",
         "type": "static"
       },
@@ -16317,13 +16428,64 @@
         "source": "transactions-journey-data-access",
         "target": "npm:@angular/router",
         "type": "static"
+      },
+      {
+        "source": "transactions-journey-data-access",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
       }
     ],
-    "transactions-journey-shared-data": [],
+    "transactions-journey-shared-data": [
+      {
+        "source": "transactions-journey-shared-data",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shared-data",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shared-data",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shared-data",
+        "target": "npm:@angular/localize",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shared-data",
+        "target": "npm:@backbase/foundation-ang",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shared-data",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "ach-positive-pay-journey-shell": [
       {
         "source": "ach-positive-pay-journey-shell",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-shell",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-shell",
         "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-shell",
+        "target": "npm:@backbase/foundation-ang",
         "type": "static"
       },
       {
@@ -16345,17 +16507,32 @@
         "source": "ach-positive-pay-journey-shell",
         "target": "ach-positive-pay-journey-shared-data",
         "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-shell",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
       }
     ],
     "transfer-journey-data-access": [
       {
         "source": "transfer-journey-data-access",
-        "target": "npm:@backbase/arrangement-manager-http-ang",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-data-access",
+        "target": "npm:@angular/common",
         "type": "static"
       },
       {
         "source": "transfer-journey-data-access",
         "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-data-access",
+        "target": "npm:@backbase/arrangement-manager-http-ang",
         "type": "static"
       },
       {
@@ -16375,12 +16552,63 @@
       },
       {
         "source": "transfer-journey-data-access",
+        "target": "npm:@backbase/foundation-ang",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-data-access",
         "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-data-access",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
-    "transfer-journey-shared-data": [],
+    "transfer-journey-shared-data": [
+      {
+        "source": "transfer-journey-shared-data",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shared-data",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shared-data",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shared-data",
+        "target": "npm:@angular/localize",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shared-data",
+        "target": "npm:@backbase/foundation-ang",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shared-data",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "ach-positive-pay-journey-ui": [
+      {
+        "source": "ach-positive-pay-journey-ui",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-ui",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
       {
         "source": "ach-positive-pay-journey-ui",
         "target": "npm:@angular/core",
@@ -16393,6 +16621,11 @@
       },
       {
         "source": "ach-positive-pay-journey-ui",
+        "target": "npm:@backbase/ui-ang",
+        "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-ui",
         "target": "npm:@backbase/arrangement-manager-http-ang",
         "type": "static"
       },
@@ -16400,17 +16633,17 @@
         "source": "ach-positive-pay-journey-ui",
         "target": "ach-positive-pay-journey-shared-data",
         "type": "static"
+      },
+      {
+        "source": "ach-positive-pay-journey-ui",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
       }
     ],
     "transactions-journey-shell": [
       {
         "source": "transactions-journey-shell",
-        "target": "transactions-journey-data-access",
-        "type": "static"
-      },
-      {
-        "source": "transactions-journey-shell",
-        "target": "transactions-journey-feature-transaction-view",
+        "target": "npm:tslib",
         "type": "static"
       },
       {
@@ -16425,12 +16658,32 @@
       },
       {
         "source": "transactions-journey-shell",
+        "target": "transactions-journey-data-access",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shell",
+        "target": "transactions-journey-feature-transaction-view",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shell",
         "target": "npm:@angular/forms",
         "type": "static"
       },
       {
         "source": "transactions-journey-shell",
         "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shell",
+        "target": "npm:@backbase/ui-ang",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-shell",
+        "target": "npm:@backbase/foundation-ang",
         "type": "static"
       },
       {
@@ -16447,9 +16700,29 @@
         "source": "transactions-journey-shell",
         "target": "transactions-journey-feature-transaction-details-view",
         "type": "static"
+      },
+      {
+        "source": "transactions-journey-shell",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
       }
     ],
     "transactions-journey-util": [
+      {
+        "source": "transactions-journey-util",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-util",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-util",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
       {
         "source": "transactions-journey-util",
         "target": "npm:@backbase/transactions-http-ang",
@@ -16457,11 +16730,26 @@
       },
       {
         "source": "transactions-journey-util",
-        "target": "npm:@angular/core",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
     "transfer-journey-feature": [
+      {
+        "source": "transfer-journey-feature",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-feature",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-feature",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
       {
         "source": "transfer-journey-feature",
         "target": "npm:@angular/router",
@@ -16479,12 +16767,7 @@
       },
       {
         "source": "transfer-journey-feature",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "transfer-journey-feature",
-        "target": "npm:@angular/common",
+        "target": "npm:@backbase/ui-ang",
         "type": "static"
       },
       {
@@ -16496,12 +16779,32 @@
         "source": "transfer-journey-feature",
         "target": "transfer-journey-shared-data",
         "type": "static"
+      },
+      {
+        "source": "transfer-journey-feature",
+        "target": "npm:@backbase/foundation-ang",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-feature",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
       }
     ],
     "transactions-journey-ui": [
       {
         "source": "transactions-journey-ui",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-ui",
         "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-ui",
+        "target": "npm:@angular/core",
         "type": "static"
       },
       {
@@ -16511,11 +16814,31 @@
       },
       {
         "source": "transactions-journey-ui",
-        "target": "npm:@angular/core",
+        "target": "npm:@backbase/ui-ang",
+        "type": "static"
+      },
+      {
+        "source": "transactions-journey-ui",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
     "transfer-journey-shell": [
+      {
+        "source": "transfer-journey-shell",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shell",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shell",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
       {
         "source": "transfer-journey-shell",
         "target": "transfer-journey-data-access",
@@ -16528,17 +16851,7 @@
       },
       {
         "source": "transfer-journey-shell",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "transfer-journey-shell",
         "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "transfer-journey-shell",
-        "target": "npm:@angular/common",
         "type": "static"
       },
       {
@@ -16550,9 +16863,39 @@
         "source": "transfer-journey-shell",
         "target": "transfer-journey-feature",
         "type": "static"
+      },
+      {
+        "source": "transfer-journey-shell",
+        "target": "npm:@backbase/foundation-ang",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shell",
+        "target": "npm:@backbase/ui-ang",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-shell",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
       }
     ],
     "transfer-journey-ui": [
+      {
+        "source": "transfer-journey-ui",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-ui",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-ui",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
       {
         "source": "transfer-journey-ui",
         "target": "npm:@angular/forms",
@@ -16565,17 +16908,17 @@
       },
       {
         "source": "transfer-journey-ui",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "transfer-journey-ui",
-        "target": "npm:@angular/common",
+        "target": "npm:@backbase/ui-ang",
         "type": "static"
       },
       {
         "source": "transfer-journey-ui",
         "target": "transfer-journey-shared-data",
+        "type": "static"
+      },
+      {
+        "source": "transfer-journey-ui",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],
@@ -16597,12 +16940,22 @@
       },
       {
         "source": "golden-sample-app",
+        "target": "npm:@backbase/ui-ang",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
         "target": "npm:angular-oauth2-oidc",
         "type": "static"
       },
       {
         "source": "golden-sample-app",
         "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
+        "target": "npm:@backbase/foundation-ang",
         "type": "static"
       },
       {
@@ -16622,22 +16975,12 @@
       },
       {
         "source": "golden-sample-app",
-        "target": "npm:@backbase/foundation-ang",
-        "type": "static"
-      },
-      {
-        "source": "golden-sample-app",
         "target": "npm:@backbase/identity-auth",
         "type": "static"
       },
       {
         "source": "golden-sample-app",
         "target": "npm:@backbase/initiate-payment-journey-ang",
-        "type": "static"
-      },
-      {
-        "source": "golden-sample-app",
-        "target": "npm:@backbase/ui-ang",
         "type": "static"
       },
       {
@@ -16667,7 +17010,22 @@
       },
       {
         "source": "golden-sample-app",
-        "target": "npm:@backbase/account-statement-business-journey-ang",
+        "target": "npm:@angular/localize",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
+        "target": "npm:@backbase/internal-account-statement-shared-data-access",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
+        "target": "npm:@backbase/internal-account-statement-shared-ui",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
+        "target": "npm:@backbase/internal-account-statement-shared-util",
         "type": "static"
       },
       {
@@ -16677,7 +17035,7 @@
       },
       {
         "source": "golden-sample-app",
-        "target": "npm:@backbase/internal-account-statement-shared-ui",
+        "target": "npm:@backbase/account-statement-business-journey-ang",
         "type": "static"
       },
       {
@@ -16718,6 +17076,11 @@
       {
         "source": "golden-sample-app",
         "target": "npm:zone.js",
+        "type": "static"
+      },
+      {
+        "source": "golden-sample-app",
+        "target": "npm:jest-preset-angular",
         "type": "static"
       }
     ],

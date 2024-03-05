@@ -2723,9 +2723,9 @@
       "type": "npm",
       "name": "npm:@jridgewell/trace-mapping",
       "data": {
-        "version": "0.3.24",
+        "version": "0.3.25",
         "packageName": "@jridgewell/trace-mapping",
-        "hash": "sha512-+VaWXDa6+l6MhflBvVXjIEAzb59nQ2JUK3bwRp2zRpPtU+8TFRy9Gg/5oIcNlkEL5PGlBFGfemUVvIgLnTzq7Q=="
+        "hash": "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ=="
       }
     },
     "npm:@csstools/cascade-layer-name-parser": {
@@ -6980,9 +6980,9 @@
       "type": "npm",
       "name": "npm:caniuse-lite",
       "data": {
-        "version": "1.0.30001591",
+        "version": "1.0.30001593",
         "packageName": "caniuse-lite",
-        "hash": "sha512-PCzRMei/vXjJyL5mJtzNiUCKP59dm8Apqc3PH8gJkMnMXZGox93RbE76jHsmLwmIo6/3nsYIpJtx0O7u5PqFuQ=="
+        "hash": "sha512-UWM1zlo3cZfkpBysd7AS+z+v007q9G1+fLTUU42rQnY6t2axoogPW/xol6T7juU5EUoOhML4WgBIdG+9yYqAjQ=="
       }
     },
     "npm:caseless": {
@@ -8294,9 +8294,9 @@
       "type": "npm",
       "name": "npm:electron-to-chromium",
       "data": {
-        "version": "1.4.689",
+        "version": "1.4.690",
         "packageName": "electron-to-chromium",
-        "hash": "sha512-GatzRKnGPS1go29ep25reM94xxd1Wj8ritU0yRhCJ/tr1Bg8gKnm6R9O/yPOhGQBoLMZ9ezfrpghNaTw97C/PQ=="
+        "hash": "sha512-+2OAGjUx68xElQhydpcbqH50hE8Vs2K6TkAeLhICYfndb67CVH0UsZaijmRUE3rHlIxU1u0jxwhgVe6fK3YANA=="
       }
     },
     "npm:emittery": {
@@ -9608,9 +9608,9 @@
       "type": "npm",
       "name": "npm:html-entities",
       "data": {
-        "version": "2.4.0",
+        "version": "2.5.2",
         "packageName": "html-entities",
-        "hash": "sha512-igBTJcNNNhvZFRtm8uA6xMY6xYleeDwn3PeBCkDz7tHttv4F2hsDI2aPgNERWzvRcNYHNT3ymRaQzllmXj4YsQ=="
+        "hash": "sha512-K//PSRMQk4FZ78Kyau+mZurHn3FH0Vwr+H36eE0rPbeYkRRi9YxceYPhuN60UwWorxyKHhqoAJl2OFKa4BVtaA=="
       }
     },
     "npm:html-escaper": {
