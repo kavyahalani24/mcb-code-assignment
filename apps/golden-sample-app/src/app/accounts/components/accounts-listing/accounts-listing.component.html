@@ -1,29 +1,54 @@
-<table [bbTable]="(accounts$ | async) ?? []" bbTableFocus (rowClick)="onRowClick($event)" (sort)="onSort($event)"
-  class="table table-hover">
-  <thead>
-    <tr>
-      <th [attr.aria-sort]="getAriaSort('number')" [bbSortable]="'number'" scope="col" tabindex="0"> Number </th>
-      <th [attr.aria-sort]="getAriaSort('name')" [bbSortable]="'name'" scope="col" tabindex="0"> Name </th>
-      <th [attr.aria-sort]="getAriaSort('productTypeName')" [bbSortable]="'productTypeName'" scope="col" tabindex="0">
-        Type
-      </th>
-      <th [attr.aria-sort]="getAriaSort('availableBalance')" [bbSortable]="'availableBalance'" scope="col" tabindex="0">
-        Available Balance
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <ng-container *ngFor="let account of accounts$ | async; let index = index">
-      <tr [bbRow]="account">
-        <td> {{ account.number }} </td>
-        <td> {{ account.name }} </td>
-        <td> {{ account.productTypeName }} </td>
-        <td> {{ account.availableBalance }} </td>
-      </tr>
-    </ng-container>
-  </tbody>
-</table>
-<bb-pagination-ui (pageChange)="paginator.onPageChange($event)" [boundaryLinks]="paginator.boundaryLinks"
-  [directionLinks]="paginator.directionLinks" [itemsPerPage]="paginator.itemsPerPage"
-  [maxNavPages]="paginator.maxNavPages" [page]="paginator.page" [totalItems]="paginator.totalItems">
-</bb-pagination-ui>
+<div class="bb-heading-widget bb-heading-widget--de-elevated btn-on-color">
+  <bb-header-ui headingType="h1" heading="Accounts" headingClasses="bb-heading-widget__heading"
+    class="bb-stack__item--fill">
+  </bb-header-ui>
+</div>
+
+<div class="container-fluid container--drag-up">
+  <div class="bb-block">
+    <div class="px-4 py-2">
+      <div class="card">
+        <div class="card-body px-0">
+          <table bbtablefocus [bbTable]="(accounts$ | async) ?? []" bbTableFocus (rowClick)="onRowClick($event)"
+            (sort)="onSort($event)" class="table table-hover">
+            <thead>
+              <tr class="d-md-table-row d-none">
+                <th [attr.aria-sort]="getAriaSort('number')" [bbSortable]="'number'" scope="col" tabindex="0"
+                  class="sortable">
+                  <span class="th-content">Number<span aria-hidden="true"></span></span>
+                </th>
+                <th [attr.aria-sort]="getAriaSort('name')" [bbSortable]="'name'" scope="col" tabindex="0"
+                  class="sortable">
+                  <span class="th-content">Name<span aria-hidden="true"></span></span>
+                </th>
+                <th [attr.aria-sort]="getAriaSort('productTypeName')" [bbSortable]="'productTypeName'" scope="col"
+                  tabindex="0" class="sortable">
+                  <span class="th-content">Type<span aria-hidden="true"></span></span>
+                </th>
+                <th [attr.aria-sort]="getAriaSort('availableBalance')" [bbSortable]="'availableBalance'" scope="col"
+                  tabindex="0" class="sortable">
+                  <span class="th-content">Available Balance<span aria-hidden="true"></span></span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <ng-container *ngFor="let account of accounts$ | async; let index = index">
+                <tr [bbRow]="account">
+                  <td> <bb-account-number [account]="account"></bb-account-number> </td>
+                  <td> {{ account.name }} </td>
+                  <td> {{ account.productTypeName }} </td>
+                  <td> <bb-amount-ui [currency]="account.currency" [amount]="account.availableBalance"
+                      [mapCurrency]="false" [showPlusSign]="false" [abbreviate]="false"></bb-amount-ui> </td>
+                </tr>
+              </ng-container>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <bb-pagination-ui (pageChange)="paginator.onPageChange($event)" [boundaryLinks]="paginator.boundaryLinks"
+    [directionLinks]="paginator.directionLinks" [itemsPerPage]="paginator.itemsPerPage"
+    [maxNavPages]="paginator.maxNavPages" [page]="paginator.page" [totalItems]="paginator.totalItems">
+  </bb-pagination-ui>
+</div>

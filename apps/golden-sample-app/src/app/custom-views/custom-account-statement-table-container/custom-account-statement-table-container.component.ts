@@ -7,6 +7,7 @@ import {
   Component,
   Inject,
   Input,
+  OnDestroy,
   OnInit,
 } from '@angular/core';
 import { NotificationService } from '@backbase/ui-ang/notification';
@@ -28,20 +29,17 @@ import {
   selector: 'gsa-custom-account-statement-table-container',
   templateUrl: './custom-account-statement-table-container.component.html',
   styleUrls: ['./custom-account-statement-table-container.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CustomAccountStatementTableContainerComponent
   extends AccountStatementTableContainerComponent
-  implements OnInit
+  implements OnInit, OnDestroy
 {
   private _searchTerm = '';
 
   @Input()
   set searchTerm(value: string) {
     this._searchTerm = value;
-    if (this._searchTerm) {
-      this.updateStatementsBasedOnSearch();
-    }
+    this.updateStatementsBasedOnSearch();
   }
 
   get searchTerm(): string {
@@ -84,11 +82,22 @@ export class CustomAccountStatementTableContainerComponent
   }
 
   updateStatementsBasedOnSearch() {
-    this.filteredAccountStatements = this.accountStatements.filter(
-      (statement) =>
-        statement?.accountNumber
-          ?.toLowerCase()
-          .includes(this.searchTerm.toLowerCase())
-    );
+    if (this.searchTerm) {
+      this.filteredAccountStatements = this.accountStatements.filter(
+        (statement) =>
+          statement?.accountNumber
+            ?.toLowerCase()
+            .includes(this.searchTerm.toLowerCase())
+      );
+    } else {
+      this.filteredAccountStatements = JSON.parse(
+        JSON.stringify(this.accountStatements)
+      );
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.ngUnsubscribe$.complete();
+    this.ngUnsubscribe$.unsubscribe();
   }
 }

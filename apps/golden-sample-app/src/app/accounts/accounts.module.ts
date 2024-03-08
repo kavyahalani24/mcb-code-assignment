@@ -7,6 +7,9 @@ import { TableModule } from '@backbase/ui-ang/table';
 import { PaginationModule } from '@backbase/ui-ang/pagination';
 import { TabModule } from '@backbase/ui-ang/tab';
 import { IconModule } from '@backbase/ui-ang/icon';
+import { AccountNumberModule } from '@backbase/ui-ang/account-number';
+import { AmountModule } from '@backbase/ui-ang/amount';
+import { HeaderModule } from '@backbase/ui-ang/header';
 import { AccountInformationComponent } from './components/account-information/account-information.component';
 import { AccountTransactionsComponent } from './components/account-transactions/account-transactions.component';
 
@@ -20,7 +23,10 @@ import { AccountTransactionsComponent } from './components/account-transactions/
   imports: [
     CommonModule,
     AccountsRoutingModule,
+    AccountNumberModule,
+    AmountModule,
     IconModule,
+    HeaderModule,
     TableModule,
     PaginationModule,
     TabModule,
