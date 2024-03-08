@@ -1,0 +1,26 @@
+<div class="d-block">
+  <div class="d-block">
+    <a class="bb-layout__horizontal-nav-link" routerLink="../" routerLinkActive="bb-layout__horizontal-nav-link--active"
+      #accountsRouterLink="routerLinkActive" [attr.aria-current]="
+            accountsRouterLink.isActive ? 'page' : undefined
+            ">
+      <bb-icon-ui class="bb-layout__vertical-nav-item-icon" name="angle-left" size="md"></bb-icon-ui>
+
+      <span class="bb-layout__horizontal-nav-item-description">
+        Back to accounts
+      </span>
+    </a>
+  </div>
+  <div class="d-block custom-tabs">
+    <div class="bb-tab-container tabs nav nav-tabs" role="tablist">
+      <a *ngFor="let tab of tabs; let tabIndex = index" class="nav-link" role="tab" [routerLink]="[tab.route]"
+        routerLinkActive="active" [relativeTo]="route" (click)="onTabSelect(tabIndex)">
+        <span class="bb-stack_item bb-stack____item--spacing-xs custom-tab-item">{{ tab?.title }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="bb-tab-container_content tab-content" role="tabpanel">
+    <router-outlet></router-outlet>
+  </div>
+</div>

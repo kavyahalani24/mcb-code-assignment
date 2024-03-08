@@ -7,6 +7,315 @@ import { Provider } from '@angular/core';
 import { AuthConfig } from 'angular-oauth2-oidc';
 import { AchPositivePayInterceptor } from '../app/interceptors/ach-positive-pay.interceptor';
 import { Environment } from './type';
+import {
+  createMocks,
+  createMocksInterceptor,
+} from '@backbase/foundation-ang/data-http';
+import { arrangementsMock } from '../mocks/arrangements-mock.data';
+import { accountStatementsCategoriesMock } from '../mocks/account-statement-categories-mock.data';
+import { accountStatementsMock } from '../mocks/account-statements-mock.data';
+
+export const ServiceAgreementsHttpServiceMocksProviderTemp = createMocks([
+  {
+    urlPattern: '/client-api/v3/accessgroups/user-context/service-agreements',
+    method: 'GET',
+    responses: [
+      {
+        status: 200,
+        body: [
+          {
+            additions: {},
+            id: '8a80976e7e783818017e7a93c70c0015',
+            externalId: 'sa_BBNDB003',
+            name: 'BBNDB003',
+            description: 'Master Service Agreement for BBNDB003',
+            isMaster: true,
+            validFromDate: null,
+            validFromTime: null,
+            validUntilDate: null,
+            validUntilTime: null,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    urlPattern: '/client-api/v3/accessgroups/user-context',
+    method: 'POST',
+    responses: [
+      {
+        status: 204,
+        body: {},
+      },
+    ],
+  },
+  {
+    urlPattern: '/client-api/v3/accessgroups/service-agreements/context',
+    method: 'GET',
+    responses: [
+      {
+        status: 200,
+        body: {
+          additions: {},
+          creatorLegalEntity: '8a80976e7e783818017e7a93c3ca0014',
+          status: 'ENABLED',
+          id: '8a80976e7e783818017e7a93c70c0015',
+          externalId: 'sa_BBNDB003',
+          approvalId: null,
+          name: 'BBNDB003',
+          description: 'Master Service Agreement for BBNDB003',
+          isMaster: true,
+          validFromDate: null,
+          validFromTime: null,
+          validUntilDate: null,
+          validUntilTime: null,
+        },
+      },
+    ],
+  },
+  {
+    urlPattern: '/client-api/v3/accessgroups/serviceagreements/context',
+    method: 'GET',
+    responses: [
+      {
+        status: 200,
+        body: {
+          additions: {},
+          creatorLegalEntity: '8a80976e7e783818017e7a93c3ca0014',
+          status: 'ENABLED',
+          id: '8a80976e7e783818017e7a93c70c0015',
+          externalId: 'sa_BBNDB003',
+          approvalId: null,
+          name: 'BBNDB003',
+          description: 'Master Service Agreement for BBNDB003',
+          isMaster: true,
+          validFromDate: null,
+          validFromTime: null,
+          validUntilDate: null,
+          validUntilTime: null,
+        },
+      },
+    ],
+  },
+  {
+    urlPattern: '/client-api/v3/accessgroups/users/permissions/summary',
+    method: 'GET',
+    responses: [
+      {
+        status: 200,
+        body: [
+          {
+            resource: 'Contacts',
+            function: 'Contacts',
+            permissions: {
+              view: true,
+              edit: true,
+            },
+          },
+          {
+            resource: 'Payments',
+            function: 'US Domestic Wire',
+            permissions: {
+              create: true,
+              view: true,
+              approve: true,
+            },
+          },
+          {
+            resource: 'Payments',
+            function: 'US Foreign Wire',
+            permissions: {
+              create: true,
+              view: true,
+              approve: true,
+            },
+          },
+          {
+            resource: 'Payments',
+            function: 'SEPA CT',
+            permissions: {
+              create: true,
+              view: true,
+              approve: true,
+            },
+          },
+          {
+            resource: 'Entitlements',
+            function: 'Manage Data Groups',
+            permissions: {
+              view: true,
+              edit: true,
+              create: true,
+              delete: true,
+            },
+          },
+          {
+            resource: 'Entitlements',
+            function: 'Manage Function Groups',
+            permissions: {
+              view: true,
+              edit: true,
+              create: true,
+              delete: true,
+            },
+          },
+          {
+            resource: 'Limits',
+            function: 'Manage Limits',
+            permissions: {
+              view: true,
+              edit: true,
+              create: true,
+              delete: true,
+            },
+          },
+          {
+            resource: 'Actions',
+            function: 'Manage Action Recipes',
+            permissions: {
+              execute: true,
+              view: true,
+              edit: true,
+              create: true,
+              delete: true,
+            },
+          },
+          {
+            resource: 'User',
+            function: 'Manage Users',
+            permissions: {
+              execute: true,
+              view: true,
+              edit: true,
+              create: true,
+              delete: true,
+            },
+          },
+          {
+            resource: 'Service Agreement',
+            function: 'Assign Users',
+            permissions: {
+              execute: true,
+              view: true,
+              edit: true,
+              create: true,
+              delete: true,
+            },
+          },
+          {
+            resource: 'Service Agreement',
+            function: 'Assign Permissions',
+            permissions: {
+              execute: true,
+              view: true,
+              edit: true,
+              create: true,
+              delete: true,
+              approve: true,
+            },
+          },
+          {
+            resource: 'Service Agreement',
+            function: 'Manage Service Agreements',
+            permissions: {
+              execute: true,
+              view: true,
+              edit: true,
+              create: true,
+              delete: true,
+            },
+          },
+          {
+            resource: 'Legal Entity',
+            function: 'Manage Legal Entities',
+            permissions: {
+              view: true,
+            },
+          },
+          {
+            resource: 'Approvals',
+            function: 'Assign Approval Policies',
+            permissions: {
+              create: true,
+              delete: true,
+              edit: true,
+              view: true,
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
+    urlPattern: '/client-api/v2/productsummary/context/arrangements',
+    method: 'GET',
+    responses: [
+      {
+        status: 200,
+        body: arrangementsMock,
+      },
+    ],
+  },
+  {
+    urlPattern: '/client-api/v2/account/statements/categories',
+    method: 'GET',
+    responses: [
+      {
+        status: 200,
+        body: accountStatementsCategoriesMock,
+      },
+    ],
+  },
+  {
+    urlPattern: '/client-api/v2/account/statements',
+    method: 'POST',
+    responses: [
+      {
+        status: 200,
+        body: accountStatementsMock,
+      },
+    ],
+  },
+  {
+    urlPattern: '/client-api/v2/account/statements/arrangements',
+    method: 'GET',
+    responses: [
+      {
+        status: 200,
+        body: {
+          arrangements: [
+            {
+              id: '1cdb2224-8926-4b4d-a99f-1c9dfbbb4691',
+              IBAN: 'CY3887370130MJFTJ3B8Y9W7IGRO',
+              BBAN: 'K8873701303897',
+              number: 'PANS',
+              productKindName: 'Current Account',
+              displayName: 'Mr and Mrs J. Smith',
+              bookedBalance: 1000,
+              principalAmount: 620.54,
+              currentInvestmentValue: 0.16,
+              currency: 'AED',
+              favorite: true,
+            },
+            {
+              id: '1cdb2224-8926-4b4d-a99f-1c9dfbbb4692',
+              IBAN: 'GB60OHSF29521903589133',
+              BBAN: 'K029521903589133',
+              number: 'PANS',
+              productKindName: 'Current Account',
+              displayName: 'Howlin Wolf',
+              bookedBalance: 15000,
+              principalAmount: 620.54,
+              currentInvestmentValue: 0.16,
+              currency: 'AED',
+              favorite: true,
+            },
+          ],
+        },
+      },
+    ],
+  },
+]);
 
 const mockProviders: Provider[] = [
   {
@@ -14,11 +323,13 @@ const mockProviders: Provider[] = [
     useClass: AchPositivePayInterceptor,
     multi: true,
   },
+  createMocksInterceptor(),
+  ServiceAgreementsHttpServiceMocksProviderTemp,
 ];
 
 export const environment: Environment = {
   production: false,
-  apiRoot: 'https://app.prd.sdbxaz.azure.backbaseservices.com/api',
+  apiRoot: '/api',
   mockProviders,
   locales: ['en-US', 'nl-NL'],
   common: {
@@ -33,7 +344,7 @@ export const environment: Environment = {
 export const authConfig: AuthConfig = {
   // Url of the Identity Provider
   issuer:
-    'https://identity.prd.sdbxaz.azure.backbaseservices.com/auth/realms/customer',
+    'https://identity.dev.sdbxaz.azure.backbaseservices.com/auth/realms/customer',
 
   // URL of the SPA to redirect the user to after login
   redirectUri: document.baseURI,

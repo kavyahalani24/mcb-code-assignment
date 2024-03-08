@@ -1,0 +1,49 @@
+<h2 class="page-header mb-20">Details</h2>
+
+<div class="row row-gap">
+  <div class="col-6">
+    <div>
+      <div class="label">Name:</div>
+      <div class="value">{{ accountData.name }}</div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div>
+      <div class="label">Available Balance:</div>
+      <div class="value">{{ accountData.availableBalance }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-gap">
+  <div class="col-6">
+    <div>
+      <div class="label">Credit Limit:</div>
+      <div class="value">{{ accountData.creditLimit }}</div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div>
+      <div class="label">Minimum Required Balance:</div>
+      <div class="value">{{ accountData.minimumRequiredBalance }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-gap">
+  <div class="col-6">
+    <div>
+      <div class="label">Total Investment Value:</div>
+      <div class="value">{{ accountData.totalInvestmentValue }}</div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div>
+      <div class="label">Account Opening Date:</div>
+      <div class="value">{{ accountData.accountOpeningDate | date:'dd-mm-yyyy' }}</div>
+    </div>
+  </div>
+</div>

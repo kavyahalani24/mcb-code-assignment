@@ -1,0 +1,32 @@
+<table [bbTable]="(transactions$ | async) ?? []" bbTableFocus (sort)="onSort($event)" class="table table-hover">
+  <thead>
+    <tr>
+      <th [attr.aria-sort]="getAriaSort('transactionDate')" [bbSortable]="'transactionDate'" scope="col" tabindex="0">
+        Transaction Date </th>
+      <th [attr.aria-sort]="getAriaSort('amount')" [bbSortable]="'amount'" scope="col" tabindex="0"> Amount </th>
+      <th [attr.aria-sort]="getAriaSort('description')" [bbSortable]="'description'" scope="col" tabindex="0">
+        Description </th>
+      <th [attr.aria-sort]="getAriaSort('category')" [bbSortable]="'category'" scope="col" tabindex="0">
+        Category
+      </th>
+      <th [attr.aria-sort]="getAriaSort('reference')" [bbSortable]="'reference'" scope="col" tabindex="0">
+        Reference No
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let transaction of transactions$ | async; let index = index">
+      <tr [bbRow]="transaction">
+        <td> {{ transaction.bookingDate | date: 'dd-mm-yyyy' }} </td>
+        <td> {{ transaction.transactionAmountCurrency.amount }} </td>
+        <td> {{ transaction.description }} </td>
+        <td> {{ transaction.category }} </td>
+        <td> {{ transaction.reference }} </td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+<bb-pagination-ui (pageChange)="paginator.onPageChange($event)" [boundaryLinks]="paginator.boundaryLinks"
+  [directionLinks]="paginator.directionLinks" [itemsPerPage]="paginator.itemsPerPage"
+  [maxNavPages]="paginator.maxNavPages" [page]="paginator.page" [totalItems]="paginator.totalItems">
+</bb-pagination-ui>

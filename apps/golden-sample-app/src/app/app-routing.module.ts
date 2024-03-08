@@ -24,13 +24,25 @@ const routes: Routes = [
     loadChildren: () =>
       import('./error-page/error-page.module').then((m) => m.ErrorPageModule),
   },
+  // {
+  //   path: 'accounts',
+  //   loadChildren: () =>
+  //     import('./user-accounts/user-accounts.module').then(
+  //       (m) => m.UserAccountsModule
+  //     ),
+  //   canActivate: [AuthGuard, UserContextGuard],
+  // },
   {
     path: 'accounts',
     loadChildren: () =>
-      import('./user-accounts/user-accounts.module').then(
-        (m) => m.UserAccountsModule
+      import('./journeys/custom-accounts-journey-bundle.module').then(
+        (m) => m.CustomAccountsJourneyBundleModule
       ),
     canActivate: [AuthGuard, UserContextGuard],
+    data: {
+      title: $localize`:@@account.nav.item.title:Accounts`,
+      // redirectTo: 'dashboard',
+    },
   },
   {
     path: 'account-statements',

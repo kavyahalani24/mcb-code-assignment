@@ -34,6 +34,20 @@
     <!-- Navigation Items-->
     <ul *ngIf="isAuthenticated" class="bb-layout__horizontal-nav">
       <li class="bb-layout__horizontal-nav-item">
+        <a class="bb-layout__horizontal-nav-link" routerLink="/accounts"
+          routerLinkActive="bb-layout__horizontal-nav-link--active" #accountsRouterLink="routerLinkActive"
+          [attr.aria-current]="
+            accountsRouterLink.isActive ? 'page' : undefined
+            ">
+          <bb-icon-ui class="bb-layout__vertical-nav-item-icon" name="accounts" size="md"></bb-icon-ui>
+
+          <span class="bb-layout__horizontal-nav-item-description">
+            Accounts
+          </span>
+        </a>
+      </li>
+
+      <li class="bb-layout__horizontal-nav-item">
         <a class="bb-layout__horizontal-nav-link" routerLink="/account-statements"
           routerLinkActive="bb-layout__horizontal-nav-link--active" #accountStatementsRouterLink="routerLinkActive"
           [attr.aria-current]="
